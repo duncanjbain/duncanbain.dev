@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
@@ -19,6 +21,7 @@ module.exports = {
         printRejected: false,
         develop: false,
         tailwind: true,
+        content: [path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}')],
       },
     },
     {
