@@ -3,11 +3,13 @@ import useSiteMetadata from '../hooks/useSiteMetadata';
 import Header from './Header';
 
 const Layout = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+  const { description, author } = useSiteMetadata();
   return (
     <>
-      <Header siteTitle={title} siteDescription={description} />
-      {children}
+      <div className="container mx-auto md:w-3/4 lg:w-2/3 xl:w-1/2">
+        <Header siteDescription={description} siteAuthor={author} />
+        {children}
+      </div>
     </>
   );
 };
