@@ -2,9 +2,11 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
-    description: 'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@gatsbyjs',
+    title: 'duncanbain.dev',
+    description: 'duncanbain.dev - Personal blog and portfolio',
+    author: 'Duncan Bain',
+    twitterUrl: 'https://twitter.com/duncanbain',
+    githubUrl: 'https://github.com/duncanjbain',
   },
   plugins: [
     'gatsby-plugin-eslint',
