@@ -17,6 +17,7 @@ const IndexTemplate = ({ data }) => (
                   {frontmatter.title}
                   {' '}
                 </span>
+                <p>{frontmatter.description}</p>
                 <p>{frontmatter.date}</p>
               </h1>
             </Link>
@@ -39,6 +40,7 @@ export const query = graphql`
         frontmatter {
           title
           date
+          description
         }
         fields {
           slug
