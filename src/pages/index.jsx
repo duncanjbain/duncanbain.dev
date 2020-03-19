@@ -8,17 +8,16 @@ const IndexTemplate = ({ data }) => (
     <Layout>
       <section className="px-8 py-4 md:py-8">
         {data.allMdx.nodes.map(({
-          id, frontmatter, fields,
+          id, frontmatter, fields, excerpt,
         }) => (
           <article key={id} className="mb-24">
             <Link to={fields.slug}>
               <h1 className="mb-2">
-                <span className="font-title text-4xl text-gray-800 leading-snug">
+                <span className="text-4xl text-gray-800 leading-snug">
                   {frontmatter.title}
-                  {' '}
                 </span>
-                <p>{frontmatter.description}</p>
-                <p>{frontmatter.date}</p>
+                <p className="text-xl text-gray-500 font-thin leading-snug">{frontmatter.date}</p>
+                <p className="text-2xl font-thin leading-snug">{excerpt}</p>
               </h1>
             </Link>
           </article>
