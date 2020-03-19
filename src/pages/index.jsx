@@ -23,7 +23,7 @@ const IndexTemplate = ({ data }) => (
 export const query = graphql`
   query SITE_INDEX_QUERY {
     allMdx(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: ASC }
       filter: { frontmatter: { published: { eq: true } } }
     ) {
       nodes {
