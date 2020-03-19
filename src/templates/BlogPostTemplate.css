@@ -1,40 +1,59 @@
+.markdown > h1 {
+  @apply text-gray-800 mt-6 mb-2 -ml-1 text-xl font-extrabold tracking-wider;
+}
+
 .markdown > h2 {
-  @apply text-3xl font-black mt-16 mb-8;
+  @apply text-gray-800 mt-6 mb-2 -ml-1 text-xl font-bold tracking-wide;
 }
 
 .markdown > h3 {
-  @apply text-2xl font-black mt-16 mb-8;
+  @apply text-gray-800 mt-6 mb-2 -ml-1 text-lg font-bold;
 }
 
 .markdown > h4 {
-  @apply font-black uppercase mt-16 mb-8;
+  @apply text-gray-800 mt-6 mb-2 -ml-1 text-lg font-semibold;
 }
 
 .markdown > h5 {
-  @apply text-sm font-black mt-16 mb-8;
+  @apply text-gray-800 mt-6 mb-2 -ml-1 text-lg font-medium;
 }
 
 .markdown > h6 {
-  @apply text-xs font-black mt-16 mb-8;
+  @apply text-gray-800 mt-6 mb-2 -ml-1 text-base font-semibold;
 }
 
 .markdown a {
-  @apply text-blue-600;
+  @apply text-blue-700 leading-relaxed font-medium mb-8;
 }
 
+.markdown a:hover {
+  @apply text-blue-500;
+}
 
 .markdown > p {
-  @apply mb-8;
+  @apply text-gray-800 leading-relaxed font-light mt-2 mb-4;
 }
 
 .markdown > blockquote {
-  @apply -ml-8 mb-8;
+  @apply border-solid border-l-4 border-gray-300 pl-4;
 }
 
 .markdown ul {
-  @apply list-disc mb-8;
+  @apply list-disc m-4;
 }
 
 .markdown ol {
-  @apply list-decimal mb-8;
+  @apply list-decimal m-4;
+}
+
+.markdown li {
+  @apply text-gray-800 font-light my-1;
+}
+
+.markdown strong {
+  @apply font-semibold;
+}
+
+.mardown em {
+  @apply italic;
 }
