@@ -1,21 +1,29 @@
 import { graphql, Link } from 'gatsby';
 import React from 'react';
+import './index.css';
 import Layout from '../components/Layout';
 
 const IndexTemplate = ({ data }) => (
   <>
     <Layout>
-      {data.allMdx.nodes.map(({
-        id, excerpt, frontmatter, fields,
-      }) => (
-        <div key={id}>
-          <Link to={fields.slug}>
-            <h1>{frontmatter.title}</h1>
-            <p>{frontmatter.date}</p>
-            <p>{excerpt}</p>
-          </Link>
-        </div>
-      ))}
+      <section className="px-8 py-4 md:py-8">
+        {data.allMdx.nodes.map(({
+          id, excerpt, frontmatter, fields,
+        }) => (
+          <article key={id} className="mb-24">
+            <Link to={fields.slug}>
+              <h1 className="mb-2">
+                <span className="font-title text-2r text-gray-800 leading-snug">
+                  {frontmatter.title}
+                  {' '}
+                </span>
+                <p>{frontmatter.date}</p>
+                <p>{excerpt}</p>
+              </h1>
+            </Link>
+          </article>
+        ))}
+      </section>
     </Layout>
   </>
 );
