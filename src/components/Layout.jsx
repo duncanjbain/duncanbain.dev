@@ -1,5 +1,5 @@
 import React from 'react';
-import useSiteMetadata from '../hooks/useSiteMetadata';
+import useSiteMetadata from '../hooks/UseSiteMetadata';
 import Header from './Header';
 
 const Layout = ({ children }) => {
