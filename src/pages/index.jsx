@@ -1,5 +1,6 @@
 import { graphql, Link } from 'gatsby';
 import React from 'react';
+import PropTypes from 'prop-types';
 import './index.css';
 import Layout from '../components/Layout';
 
@@ -7,9 +8,7 @@ const IndexTemplate = ({ data }) => (
   <>
     <Layout>
       <section className="px-8 py-4 md:py-8">
-        {data.allMdx.nodes.map(({
-          id, frontmatter, fields, excerpt,
-        }) => (
+        {data.allMdx.nodes.map(({ id, frontmatter, fields, excerpt }) => (
           <article key={id} className="mb-24">
             <Link to={fields.slug}>
               <h1 className="mb-2">
@@ -48,5 +47,9 @@ export const query = graphql`
     }
   }
 `;
+
+IndexTemplate.propTypes = {
+  data: PropTypes.node.isRequired,
+};
 
 export default IndexTemplate;

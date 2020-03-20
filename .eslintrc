@@ -1,6 +1,0 @@
-{
-  "rules": {
-    "react/prop-types": 0
-  },
-  "extends": "airbnb"
-}

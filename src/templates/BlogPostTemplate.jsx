@@ -4,7 +4,6 @@ import React from 'react';
 import Layout from '../components/Layout';
 import './BlogPostTemplate.css';
 
-
 export default ({ data, pageContext }) => {
   const { frontmatter, body } = data.mdx;
   const { previous, next } = pageContext;
@@ -15,9 +14,7 @@ export default ({ data, pageContext }) => {
         <p className="text-lg text-gray-800 font-light mb-2">{frontmatter.description}</p>
         <p className="text-xs text-gray-500 font-thin">{frontmatter.date}</p>
         <div className="markdown">
-          <MDXRenderer>
-            {body}
-          </MDXRenderer>
+          <MDXRenderer>{body}</MDXRenderer>
         </div>
         {previous === false ? null : (
           <>
