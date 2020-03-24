@@ -7,6 +7,7 @@ module.exports = {
     author: 'Duncan Bain',
     twitterUrl: 'https://twitter.com/duncanbain',
     githubUrl: 'https://github.com/duncanjbain',
+    linkedinUrl: 'https://www.linkedin.com/in/duncanjbain/',
   },
   plugins: [
     'gatsby-plugin-eslint',
@@ -23,7 +24,9 @@ module.exports = {
         printRejected: false,
         develop: false,
         tailwind: true,
-        content: [path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}')],
+        content: [
+          path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}'),
+        ],
       },
     },
     {

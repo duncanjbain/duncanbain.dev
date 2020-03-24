@@ -5,11 +5,23 @@ import Footer from './Footer';
 import './Fontawesome';
 
 const Layout = ({ children }) => {
-  const { description, author } = useSiteMetadata();
+  const {
+    description,
+    author,
+    twitterUrl,
+    githubUrl,
+    linkedinUrl,
+  } = useSiteMetadata();
   return (
     <>
       <div className="container mx-auto md:w-3/4 lg:w-2/3 xl:w-1/2">
-        <Header siteDescription={description} siteAuthor={author} />
+        <Header
+          siteDescription={description}
+          siteAuthor={author}
+          twitterLink={twitterUrl}
+          githubLink={githubUrl}
+          linkedinUrl={linkedinUrl}
+        />
         {children}
         <Footer />
       </div>
