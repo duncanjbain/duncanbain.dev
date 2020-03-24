@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
           siteAuthor={author}
           twitterLink={twitterUrl}
           githubLink={githubUrl}
-          linkedinUrl={linkedinUrl}
+          linkedinLink={linkedinUrl}
         />
         {children}
         <Footer />
