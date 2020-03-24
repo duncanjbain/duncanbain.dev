@@ -9,7 +9,7 @@ export default ({ data, pageContext }) => {
   const { previous, next } = pageContext;
   return (
     <Layout>
-      <article className="m-8 break-words md:mt-12 mb-16">
+      <article className="px-8 break-words md:mt-12 mb-16">
         <h2 className="text-3xl text-gray-800 font-medium leading-snug mb-2">
           {frontmatter.title}
         </h2>

@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 const Footer = () => (
-  <footer className="px-8 text-center">
+  <footer className="px-8 mb-6 text-center">
     <hr className="my-4" />
     <p className="text-base text-gray-700 font-light">
       Made with{' '}
@@ -13,7 +13,7 @@ const Footer = () => (
       <Link to="/" className="text-blue-700 hover:text-blue-500">
         Duncan Bain
       </Link>{' '}
-      using{' '}
+      with{' '}
       <a
         href="https://gatsbyjs.org"
         className="text-blue-700 hover:text-blue-500"
