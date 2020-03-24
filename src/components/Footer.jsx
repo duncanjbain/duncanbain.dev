@@ -1,8 +1,9 @@
 import { Link } from 'gatsby';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => (
-  <footer className="px-8 mb-6 text-center">
+  <footer className="m-8 text-center">
     <hr className="my-4" />
     <p className="text-base text-gray-700 font-light">
       Made with{' '}
@@ -20,6 +21,7 @@ const Footer = () => (
       >
         Gatsby
       </a>
+      <FontAwesomeIcon icon={['fab', 'twitter']} />
     </p>
   </footer>
 );

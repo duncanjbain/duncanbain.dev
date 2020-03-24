@@ -2,6 +2,7 @@ import React from 'react';
 import useSiteMetadata from '../hooks/UseSiteMetadata';
 import Header from './Header';
 import Footer from './Footer';
+import './Fontawesome';
 
 const Layout = ({ children }) => {
   const { description, author } = useSiteMetadata();
