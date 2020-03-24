@@ -15,7 +15,9 @@ const IndexTemplate = ({ data }) => (
                 <span className="text-4xl text-gray-800 leading-snug">
                   {frontmatter.title}
                 </span>
-                <p className="text-xl text-gray-500 font-thin leading-snug">{frontmatter.date}</p>
+                <p className="text-xl text-gray-500 font-thin leading-snug">
+                  {frontmatter.date}
+                </p>
                 <p className="text-2xl font-thin leading-snug">{excerpt}</p>
               </h1>
             </Link>

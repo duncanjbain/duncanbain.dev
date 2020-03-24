@@ -2,11 +2,11 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 const Header = ({ siteAuthor, siteDescription }) => (
-  <header>
-    <h1 className="pt-10 px-8 text-xl text-gray-800 font-medium">
+  <header className="px-8">
+    <h1 className="pt-10 text-xl text-gray-800 font-medium">
       <Link to="/">{siteAuthor}</Link>
     </h1>
-    <div className="px-8 pb-4">
+    <div className="pb-4">
       <p className="text-base text-gray-700 font-light">
         {siteDescription}
         <span className="px-4 text-gray-500">|</span>
@@ -15,7 +15,7 @@ const Header = ({ siteAuthor, siteDescription }) => (
         </Link>
       </p>
     </div>
-    <hr className="my-4 mx-8" />
+    <hr className="my-4" />
   </header>
 );
 

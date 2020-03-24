@@ -10,8 +10,12 @@ export default ({ data, pageContext }) => {
   return (
     <Layout>
       <article className="m-8 break-words md:mt-12 mb-16">
-        <h2 className="text-3xl text-gray-800 font-medium leading-snug mb-2">{frontmatter.title}</h2>
-        <p className="text-lg text-gray-800 font-light mb-2">{frontmatter.description}</p>
+        <h2 className="text-3xl text-gray-800 font-medium leading-snug mb-2">
+          {frontmatter.title}
+        </h2>
+        <p className="text-lg text-gray-800 font-light mb-2">
+          {frontmatter.description}
+        </p>
         <p className="text-xs text-gray-500 font-thin">{frontmatter.date}</p>
         <div className="markdown">
           <MDXRenderer>{body}</MDXRenderer>
