@@ -16,7 +16,9 @@ const Header = ({
     </h1>
     <nav>
       <ul className="flex">
-        <span className="px-4 text-gray-500 hidden md:block">|</span>
+        <li>
+          <span className="px-4 text-gray-500 hidden md:block">|</span>
+        </li>
         <li className="mr-4">
           <Link to="/about" className="text-blue-700 hover:text-blue-500">
             About
