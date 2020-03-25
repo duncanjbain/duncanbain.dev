@@ -9,29 +9,36 @@ const Header = ({
   githubLink,
   linkedinLink,
 }) => (
-  <header className="px-8">
-    <h1 className="pt-10 text-xl text-gray-800 font-medium">
+  <header className="px-8 pt-10 flex flex-col md:flex-row md:items-end md:justify-start md:content-end">
+    <h1 className="text-xl text-gray-800 font-medium flex flex-col">
       <Link to="/">{siteAuthor}</Link>
-    </h1>
-    <div className="pb-4 flex">
       <p className="text-base text-gray-700 font-light"> {siteDescription}</p>
-      <span className="px-4 text-gray-500">|</span>
-      <p className="mr-4">
-        <Link to="/about" className="text-blue-700 hover:text-blue-500">
-          About
-        </Link>
-      </p>
-      <a className="align-middle mr-4" href={twitterLink}>
-        <FontAwesomeIcon icon={['fab', 'twitter']} />
-      </a>
-      <a className="align-middle mr-4" href={githubLink}>
-        <FontAwesomeIcon icon={['fab', 'github']} />
-      </a>
-      <a className="align-middle mr-4" href={linkedinLink}>
-        <FontAwesomeIcon icon={['fab', 'linkedin']} />
-      </a>
-    </div>
-    <hr className="my-4" />
+    </h1>
+    <nav>
+      <ul className="flex">
+        <span className="px-4 text-gray-500 hidden md:block">|</span>
+        <li className="mr-4">
+          <Link to="/about" className="text-blue-700 hover:text-blue-500">
+            About
+          </Link>
+        </li>
+        <li className="align-middle mr-4">
+          <a href={twitterLink}>
+            <FontAwesomeIcon icon={['fab', 'twitter']} />
+          </a>
+        </li>
+        <li className="align-middle mr-4">
+          <a href={githubLink}>
+            <FontAwesomeIcon icon={['fab', 'github']} />
+          </a>
+        </li>
+        <li className="align-middle mr-4" href={linkedinLink}>
+          <a href={linkedinLink}>
+            <FontAwesomeIcon icon={['fab', 'linkedin']} />
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 );
 
