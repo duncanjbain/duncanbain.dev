@@ -25,17 +25,17 @@ const Header = ({
           </Link>
         </li>
         <li className="align-middle mr-4">
-          <a href={twitterLink}>
+          <a href={twitterLink} aria-label="Twitter Profile">
             <FontAwesomeIcon icon={['fab', 'twitter']} />
           </a>
         </li>
         <li className="align-middle mr-4">
-          <a href={githubLink}>
+          <a href={githubLink} aria-label="Github Profile">
             <FontAwesomeIcon icon={['fab', 'github']} />
           </a>
         </li>
-        <li className="align-middle mr-4" href={linkedinLink}>
-          <a href={linkedinLink}>
+        <li className="align-middle mr-4">
+          <a href={linkedinLink} aria-label="LinkedIn Profile">
             <FontAwesomeIcon icon={['fab', 'linkedin']} />
           </a>
         </li>
