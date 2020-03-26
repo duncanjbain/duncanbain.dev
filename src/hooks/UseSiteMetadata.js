@@ -6,10 +6,14 @@ const useSiteMetadata = () => {
       query SITE_METADATA_QUERY {
         site {
           siteMetadata {
-            author
             title
             description
+            author
+            keywords
+            siteUrl
+            siteImage
             twitterUrl
+            twitterUsername
             githubUrl
             linkedinUrl
           }
@@ -17,7 +21,7 @@ const useSiteMetadata = () => {
       }
     `
   );
-  return site.siteMetadata;
+  return site;
 };
 
 export default useSiteMetadata;

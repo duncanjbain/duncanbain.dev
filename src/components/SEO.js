@@ -1,25 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
+import useSiteMetadata from '../hooks/UseSiteMetadata';
 
 function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            keywords
-            siteUrl
-            twitterUsername
-          }
-        }
-      }
-    `
-  );
+  const site = useSiteMetadata();
 
   const metaDescription = description || site.siteMetadata.description;
 
