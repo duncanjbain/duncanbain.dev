@@ -55,5 +55,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-remove-serviceworker',
+    'gatsby-plugin-netlify',
   ],
 };
