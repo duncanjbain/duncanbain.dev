@@ -56,5 +56,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-netlify',
+    'gatsby-plugin-sitemap',
   ],
 };
