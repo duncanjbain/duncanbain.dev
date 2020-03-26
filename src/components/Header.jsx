@@ -10,10 +10,12 @@ const Header = ({
   linkedinLink,
 }) => (
   <header className="px-8 pt-10 flex flex-col md:flex-row md:items-end md:justify-start md:content-end">
-    <h1 className="text-xl text-gray-800 font-medium flex flex-col">
-      <Link to="/">{siteAuthor}</Link>
-      <p className="text-base text-gray-700 font-light"> {siteDescription}</p>
-    </h1>
+    <Link to="/">
+      <h1 className="text-xl text-gray-800 font-medium flex flex-col">
+        {siteAuthor}
+        <p className="text-base text-gray-700 font-light"> {siteDescription}</p>
+      </h1>
+    </Link>
     <nav>
       <ul className="flex">
         <li>
