@@ -8,7 +8,7 @@ import SEO from '../components/SEO';
 const IndexTemplate = ({ data }) => (
   <>
     <Layout>
-      <SEO title="duncanbain.dev" />
+      <SEO title="Home" />
       <section className="px-8 py-4 md:py-8">
         {data.allMdx.nodes.map(({ id, frontmatter, fields, excerpt }) => (
           <article key={id} className="mb-24">
