@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import useSiteMetadata from '../hooks/UseSiteMetadata';
 
-function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
+function SEO({ description, lang, meta, image: metaImage, title }) {
   const site = useSiteMetadata();
 
   const metaDescription = description || site.siteMetadata.description;
@@ -13,8 +13,6 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
       : null;
 
-  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null;
-
   return (
     <Helmet
       htmlAttributes={{
@@ -22,16 +20,6 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
       }}
       title={title}
       titleTemplate={`${title} | ${site.siteMetadata.title}`}
-      link={
-        canonical
-          ? [
-              {
-                rel: 'canonical',
-                href: canonical,
-              },
-            ]
-          : []
-      }
       meta={[
         {
           name: 'description',
@@ -103,7 +91,6 @@ SEO.defaultProps = {
   meta: [],
   description: ``,
   image: {},
-  pathname: '',
 };
 
 SEO.propTypes = {
@@ -116,6 +103,5 @@ SEO.propTypes = {
     height: PropTypes.number.isRequired,
     width: PropTypes.number.isRequired,
   }),
-  pathname: PropTypes.string,
 };
 export default SEO;

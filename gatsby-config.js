@@ -17,6 +17,12 @@ module.exports = {
     'gatsby-plugin-eslint',
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: 'https://duncanbain.dev',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-postcss',
       options: {
         postCssPlugins: [require('tailwindcss'), require('autoprefixer')],
