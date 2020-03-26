@@ -5,7 +5,11 @@ module.exports = {
     title: 'duncanbain.dev',
     description: 'duncanbain.dev - Personal blog and portfolio',
     author: 'Duncan Bain',
+    keywords: 'testword1,testword2',
+    siteUrl: 'https://duncanbain.dev', // no trailing slash!
+    siteImage: '/demo/image.jpg', // path to site image
     twitterUrl: 'https://twitter.com/duncanbain',
+    twitterUsername: 'duncanbain',
     githubUrl: 'https://github.com/duncanjbain',
     linkedinUrl: 'https://www.linkedin.com/in/duncanjbain/',
   },
