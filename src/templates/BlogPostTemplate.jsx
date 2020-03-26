@@ -2,6 +2,7 @@ import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import './BlogPostTemplate.css';
 
 export default ({ data, pageContext }) => {
@@ -9,6 +10,7 @@ export default ({ data, pageContext }) => {
   const { previous, next } = pageContext;
   return (
     <Layout>
+      <SEO title={frontmatter.title} description={frontmatter.description} />
       <article className="px-8 break-words md:mt-12 mb-16">
         <h2 className="text-3xl text-gray-800 font-medium leading-snug mb-2">
           {frontmatter.title}
