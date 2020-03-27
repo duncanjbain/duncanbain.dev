@@ -5545,6 +5545,15 @@ gatsby-core-utils@^1.0.34:
     configstore "^5.0.1"
     node-object-hash "^2.0.0"
 
+gatsby-core-utils@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.1.1.tgz#3ebe4c6fe277ef8d91e1b708bd65ef4f7dc0928b"
+  integrity sha512-EboPcBx37YQVUKN9JH753S54nDxjRmOefbR0i08KTmaVgQ1lZnDXJr8JfrImmMqupZlOkPQX1mWlXfp+r1jGhA==
+  dependencies:
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    node-object-hash "^2.0.0"
+
 gatsby-graphiql-explorer@^0.2.36:
   version "0.2.36"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-0.2.36.tgz#c574b3a4a1238e43c50dd15d16854f63fa60b1b8"
@@ -5580,6 +5589,20 @@ gatsby-page-utils@^0.0.45:
     chokidar "3.3.1"
     fs-exists-cached "^1.0.0"
     gatsby-core-utils "^1.0.34"
+    glob "^7.1.6"
+    lodash "^4.17.15"
+    micromatch "^3.1.10"
+
+gatsby-page-utils@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-0.1.1.tgz#f93ed3fd11c96944f888e9d85abdb7b83af927d6"
+  integrity sha512-g4ETSZM7wlMycHPKwQ7QqxkqnwbXCgwg2Sqh2DyCsd5qwtPm6RrQht3cnbsKAeuo7gWsbqzv088YGa3krrIREw==
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+    bluebird "^3.7.2"
+    chokidar "3.3.1"
+    fs-exists-cached "^1.0.0"
+    gatsby-core-utils "^1.1.1"
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"
@@ -5660,6 +5683,19 @@ gatsby-plugin-page-creator@^2.1.46:
     bluebird "^3.7.2"
     fs-exists-cached "^1.0.0"
     gatsby-page-utils "^0.0.45"
+    glob "^7.1.6"
+    lodash "^4.17.15"
+    micromatch "^3.1.10"
+
+gatsby-plugin-page-creator@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.2.1.tgz#d0da8cdf1ea0d71eb5bb3fb0241e35fb7a5742df"
+  integrity sha512-RRlk7FUScyEj1S6PlGpdj/lrJmps+rl7sQNauOBCIGt3Sod5alin0l8aQJa/ldpI6DIPbp4PWIpqkPsWxED/LA==
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+    bluebird "^3.7.2"
+    fs-exists-cached "^1.0.0"
+    gatsby-page-utils "^0.1.1"
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"

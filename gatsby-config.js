@@ -52,6 +52,12 @@ module.exports = {
         extensions: ['.mdx', '.md'],
       },
     },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/pages`, // load pages from this package (theme)
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-remove-serviceworker',
