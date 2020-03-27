@@ -11,7 +11,7 @@ const IndexTemplate = ({ data }) => (
       <SEO title="Home" />
       <section className="px-8 py-4 md:py-8">
         {data.allMdx.nodes.map(({ id, frontmatter, fields, excerpt }) => (
-          <article key={id} className="mb-24">
+          <article key={id} className="mb-12">
             <Link to={fields.slug}>
               <h1 className="mb-2">
                 <span className="text-4xl text-gray-800 leading-snug">

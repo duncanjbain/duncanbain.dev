@@ -9,7 +9,7 @@ const Header = ({
   githubLink,
   linkedinLink,
 }) => (
-  <header className="m-8 mt-10 pb-4 flex flex-col md:flex-row md:items-end md:justify-between md:content-end border-b pb-8">
+  <header className="m-8 pb-4 flex flex-col md:flex-row md:items-end md:justify-between md:content-end border-b pb-8">
     <Link to="/">
       <h1 className="text-xl text-gray-800 font-medium flex flex-col">
         {siteAuthor}
@@ -21,6 +21,16 @@ const Header = ({
         <li className="mr-4">
           <Link to="/about" className="text-blue-700 hover:text-blue-500">
             About
+          </Link>
+        </li>
+        <li className="mr-4">
+          <Link to="/projects" className="text-blue-700 hover:text-blue-500">
+            Projects
+          </Link>
+        </li>
+        <li className="mr-4">
+          <Link to="/uses" className="text-blue-700 hover:text-blue-500">
+            Uses
           </Link>
         </li>
         <li className="mr-4">
