@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 const Footer = () => (
-  <footer className="m-4 text-center border-t pt-4">
+  <footer className="m-4 mx-8 text-center border-t pt-4">
     <p className="text-base text-gray-700 font-light">
       Made with{' '}
       <span role="img" aria-label="Sparkly heart emoji">
