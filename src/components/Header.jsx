@@ -9,7 +9,7 @@ const Header = ({
   githubLink,
   linkedinLink,
 }) => (
-  <header className="px-8 mt-10 flex flex-col md:flex-row md:items-end md:justify-between md:content-end">
+  <header className="m-8 mt-10 pb-4 flex flex-col md:flex-row md:items-end md:justify-between md:content-end border-b pb-8">
     <Link to="/">
       <h1 className="text-xl text-gray-800 font-medium flex flex-col">
         {siteAuthor}
