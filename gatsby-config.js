@@ -50,6 +50,15 @@ module.exports = {
       resolve: 'gatsby-plugin-mdx',
       options: {
         extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              aliases: { sh: 'bash', js: 'javascript' },
+              showLineNumbers: true,
+            },
+          },
+        ],
       },
     },
     {
