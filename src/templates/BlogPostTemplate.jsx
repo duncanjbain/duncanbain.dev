@@ -1,6 +1,5 @@
 import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-import Img from 'gatsby-image';
 import React from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -9,7 +8,6 @@ import './BlogPostTemplate.css';
 export default ({ data, pageContext }) => {
   const { frontmatter, body } = data.mdx;
   const { previous, next } = pageContext;
-  const featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid;
 
   return (
     <Layout>
@@ -22,7 +20,6 @@ export default ({ data, pageContext }) => {
           {frontmatter.description}
         </p>
         <p className="text-xs text-gray-500 font-thin">{frontmatter.date}</p>
-        <Img fluid={featuredImgFluid} />
         <div className="markdown">
           <MDXRenderer>{body}</MDXRenderer>
         </div>
@@ -57,13 +54,6 @@ export const query = graphql`
         title
         description
         date(formatString: "YYYY MMMM Do")
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 960) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
       }
     }
   }
