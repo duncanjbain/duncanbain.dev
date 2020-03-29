@@ -58,6 +58,14 @@ module.exports = {
               showLineNumbers: true,
             },
           },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 960,
+              withWebp: true,
+              ignoreFileExtensions: [],
+            },
+          },
         ],
       },
     },
@@ -68,6 +76,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-netlify',
