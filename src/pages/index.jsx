@@ -1,9 +1,9 @@
-import { graphql, Link } from 'gatsby';
-import React from 'react';
-import PropTypes from 'prop-types';
-import './index.css';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import { graphql, Link } from "gatsby";
+import React from "react";
+import PropTypes from "prop-types";
+import "./index.css";
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 
 const IndexTemplate = ({ data }) => (
   <>

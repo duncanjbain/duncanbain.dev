@@ -1,9 +1,9 @@
-const { createFilePath } = require('gatsby-source-filesystem');
-const path = require('path');
+const { createFilePath } = require("gatsby-source-filesystem");
+const path = require("path");
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
-  const blogPostTemplate = path.resolve('src/templates/BlogPostTemplate.jsx');
+  const blogPostTemplate = path.resolve("src/templates/BlogPostTemplate.jsx");
 
   return graphql(`
     {
@@ -47,10 +47,10 @@ exports.createPages = ({ actions, graphql }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
-  if (node.internal.type === 'Mdx') {
+  if (node.internal.type === "Mdx") {
     const value = createFilePath({ node, getNode });
     createNodeField({
-      name: 'slug',
+      name: "slug",
       node,
       value,
     });

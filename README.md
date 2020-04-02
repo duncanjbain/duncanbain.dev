@@ -1,2 +1,3 @@
 # duncanbain.dev
+
 Personal blog

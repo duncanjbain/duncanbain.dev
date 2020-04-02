@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import useSiteMetadata from '../hooks/UseSiteMetadata';
-import favicon16 from '../images/favicon-16x16.png';
-import favicon32 from '../images/favicon-32x32.png';
-import favicon64 from '../images/favicon.ico';
-import appleicon from '../images/apple-touch-icon.png';
-import android192 from '../images/android-chrome-192x192.png';
-import android512 from '../images/android-chrome-512x512.png';
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import useSiteMetadata from "../hooks/UseSiteMetadata";
+import favicon16 from "../images/favicon-16x16.png";
+import favicon32 from "../images/favicon-32x32.png";
+import favicon64 from "../images/favicon.ico";
+import appleicon from "../images/apple-touch-icon.png";
+import android192 from "../images/android-chrome-192x192.png";
+import android512 from "../images/android-chrome-512x512.png";
 
 function SEO({ description, lang, meta, image: metaImage, title }) {
   const site = useSiteMetadata();
@@ -28,67 +28,67 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
       titleTemplate={`${title} | ${site.siteMetadata.title}`}
       link={[
         {
-          rel: 'icon',
-          type: 'image/png',
-          sizes: '16x16',
+          rel: "icon",
+          type: "image/png",
+          sizes: "16x16",
           href: `${favicon16}`,
         },
         {
-          rel: 'icon',
-          type: 'image/png',
-          sizes: '32x32',
+          rel: "icon",
+          type: "image/png",
+          sizes: "32x32",
           href: `${favicon32}`,
         },
-        { rel: 'shortcut icon', type: 'image/png', href: `${favicon64}` },
+        { rel: "shortcut icon", type: "image/png", href: `${favicon64}` },
         {
-          rel: 'icon',
-          type: 'image/png',
-          sizes: '192x192',
+          rel: "icon",
+          type: "image/png",
+          sizes: "192x192",
           href: `${android192}`,
         },
         {
-          rel: 'icon',
-          type: 'image/png',
-          sizes: '512x512',
+          rel: "icon",
+          type: "image/png",
+          sizes: "512x512",
           href: `${android512}`,
         },
         {
-          rel: 'apple-touch-icon',
-          sizes: '180x180',
+          rel: "apple-touch-icon",
+          sizes: "180x180",
           href: `${appleicon}`,
         },
       ]}
       meta={[
         {
-          name: 'description',
+          name: "description",
           content: metaDescription,
         },
         {
-          name: 'keywords',
+          name: "keywords",
           content: site.siteMetadata.keywords,
         },
         {
-          property: 'og:title',
+          property: "og:title",
           content: title,
         },
         {
-          property: 'og:description',
+          property: "og:description",
           content: metaDescription,
         },
         {
-          property: 'og:type',
+          property: "og:type",
           content: `website`,
         },
         {
-          name: 'twitter:creator',
+          name: "twitter:creator",
           content: site.siteMetadata.twitterUsername,
         },
         {
-          name: 'twitter:title',
+          name: "twitter:title",
           content: title,
         },
         {
-          name: 'twitter:description',
+          name: "twitter:description",
           content: metaDescription,
         },
       ]
@@ -96,26 +96,26 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
           metaImage
             ? [
                 {
-                  property: 'og:image',
+                  property: "og:image",
                   content: image,
                 },
                 {
-                  property: 'og:image:width',
+                  property: "og:image:width",
                   content: metaImage.width,
                 },
                 {
-                  property: 'og:image:height',
+                  property: "og:image:height",
                   content: metaImage.height,
                 },
                 {
-                  name: 'twitter:card',
-                  content: 'summary_large_image',
+                  name: "twitter:card",
+                  content: "summary_large_image",
                 },
               ]
             : [
                 {
-                  name: 'twitter:card',
-                  content: 'summary',
+                  name: "twitter:card",
+                  content: "summary",
                 },
               ]
         )

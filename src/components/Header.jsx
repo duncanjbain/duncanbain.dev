@@ -1,6 +1,6 @@
-import { Link } from 'gatsby';
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "gatsby";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = ({
   siteAuthor,
@@ -48,7 +48,7 @@ const Header = ({
             aria-label="Twitter Profile"
             className="text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400"
           >
-            <FontAwesomeIcon icon={['fab', 'twitter']} />
+            <FontAwesomeIcon icon={["fab", "twitter"]} />
           </a>
         </li>
         <li className="mr-2">
@@ -57,7 +57,7 @@ const Header = ({
             aria-label="Github Profile"
             className="text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400"
           >
-            <FontAwesomeIcon icon={['fab', 'github']} />
+            <FontAwesomeIcon icon={["fab", "github"]} />
           </a>
         </li>
         <li className="mr-2">
@@ -66,7 +66,7 @@ const Header = ({
             aria-label="LinkedIn Profile"
             className="text-blue-700 hover:text-blue-500"
           >
-            <FontAwesomeIcon icon={['fab', 'linkedin']} />
+            <FontAwesomeIcon icon={["fab", "linkedin"]} />
           </a>
         </li>
       </ul>

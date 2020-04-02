@@ -1,9 +1,9 @@
-import { graphql, Link } from 'gatsby';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
-import React from 'react';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import './BlogPostTemplate.css';
+import { graphql, Link } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import React from "react";
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
+import "./BlogPostTemplate.css";
 
 export default ({ data, pageContext }) => {
   const { frontmatter, body } = data.mdx;
