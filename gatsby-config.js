@@ -25,7 +25,14 @@ module.exports = {
     {
       resolve: "gatsby-plugin-postcss",
       options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("autoprefixer")({
+            features: {
+              "nesting-rules": true,
+            },
+          }),
+        ],
       },
     },
     {
@@ -81,5 +88,6 @@ module.exports = {
     "gatsby-plugin-remove-serviceworker",
     "gatsby-plugin-netlify",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-styled-components",
   ],
 };
