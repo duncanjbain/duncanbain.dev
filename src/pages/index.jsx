@@ -2,30 +2,52 @@ import { graphql, Link } from "gatsby";
 import React from "react";
 import PropTypes from "prop-types";
 import "./index.css";
+import tw from "tailwind.macro";
+import styled from "styled-components";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
+
+const ArticleList = styled.section`
+  ${tw`px-8 py-4 md:py-8`}
+`;
+
+const Article = styled.article`
+  ${tw`mb-12`}
+`;
+
+const ArticleHeader = styled.h1`
+  ${tw`mb-2`}
+`;
+
+const ArticleTitle = styled.span`
+  ${tw`text-4xl text-gray-800 leading-snug`}
+`;
+
+const ArticleDate = styled.p`
+  ${tw`text-xl text-gray-500 font-thin leading-snug`}
+`;
+
+const ArticleExcerpt = styled.p`
+  ${tw`text-2xl font-thin leading-snug`}
+`;
 
 const IndexTemplate = ({ data }) => (
   <>
     <Layout>
       <SEO title="Home" />
-      <section className="px-8 py-4 md:py-8">
+      <ArticleList>
         {data.allMdx.nodes.map(({ id, frontmatter, fields, excerpt }) => (
-          <article key={id} className="mb-12">
+          <Article key={id}>
             <Link to={fields.slug}>
-              <h1 className="mb-2">
-                <span className="text-4xl text-gray-800 leading-snug">
-                  {frontmatter.title}
-                </span>
-                <p className="text-xl text-gray-500 font-thin leading-snug">
-                  {frontmatter.date}
-                </p>
-                <p className="text-2xl font-thin leading-snug">{excerpt}</p>
-              </h1>
+              <ArticleHeader>
+                <ArticleTitle>{frontmatter.title}</ArticleTitle>
+                <ArticleDate>{frontmatter.date}</ArticleDate>
+                <ArticleExcerpt>{excerpt}</ArticleExcerpt>
+              </ArticleHeader>
             </Link>
-          </article>
+          </Article>
         ))}
-      </section>
+      </ArticleList>
     </Layout>
   </>
 );
