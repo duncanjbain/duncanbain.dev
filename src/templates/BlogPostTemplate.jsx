@@ -12,15 +12,15 @@ const Article = styled.section`
 `;
 
 const ArticleHeader = styled.h2`
-  ${`text-3xl text-gray-800 font-medium leading-snug mb-2`}
+  ${tw`text-3xl text-gray-800 font-medium leading-snug mb-2`}
 `;
 
 const ArticleDescription = styled.p`
-  ${`text-lg text-gray-800 font-light mb-2`}
+  ${tw`text-lg text-gray-800 font-light mb-2`}
 `;
 
 const ArticleDate = styled.p`
-  ${`text-xs text-gray-500 font-thin`}
+  ${tw`text-xs text-gray-500 font-thin`}
 `;
 
 export default ({ data, pageContext }) => {

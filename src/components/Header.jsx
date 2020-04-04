@@ -1,6 +1,20 @@
 import { Link } from "gatsby";
 import React from "react";
+import tw from "tailwind.macro";
+import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const SiteHeaderContainer = styled.header`
+  ${tw`m-8 pb-4 flex flex-col md:flex-row md:items-end md:justify-between md:content-end border-b pb-8`}
+`;
+
+const SiteTitle = styled.h1`
+  ${tw`text-xl text-gray-800 font-medium flex flex-col`}
+`;
+
+const SiteDescription = styled.p`
+  ${tw`text-base text-gray-700 font-light`}
+`;
 
 const Header = ({
   siteAuthor,
@@ -9,12 +23,12 @@ const Header = ({
   githubLink,
   linkedinLink,
 }) => (
-  <header className="m-8 pb-4 flex flex-col md:flex-row md:items-end md:justify-between md:content-end border-b pb-8">
+  <SiteHeaderContainer>
     <Link to="/">
-      <h1 className="text-xl text-gray-800 font-medium flex flex-col">
+      <SiteTitle>
         {siteAuthor}
-        <p className="text-base text-gray-700 font-light"> {siteDescription}</p>
-      </h1>
+        <SiteDescription> {siteDescription}</SiteDescription>
+      </SiteTitle>
     </Link>
     <nav>
       <ul className="flex mt-4 md:md-0">
@@ -71,7 +85,7 @@ const Header = ({
         </li>
       </ul>
     </nav>
-  </header>
+  </SiteHeaderContainer>
 );
 
 export default Header;
