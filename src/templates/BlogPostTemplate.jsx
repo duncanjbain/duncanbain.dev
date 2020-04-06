@@ -5,7 +5,6 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
-import "./BlogPostTemplate.css";
 
 const Article = styled.section`
   ${tw`px-8 break-words md:mt-12 mb-16`}
@@ -34,9 +33,7 @@ export default ({ data, pageContext }) => {
         <ArticleHeader>{frontmatter.title}</ArticleHeader>
         <ArticleDescription>{frontmatter.description}</ArticleDescription>
         <ArticleDate>{frontmatter.date}</ArticleDate>
-        <div className="markdown">
-          <MDXRenderer>{body}</MDXRenderer>
-        </div>
+        <MDXRenderer>{body}</MDXRenderer>
         {previous === false ? null : (
           <>
             {previous && (

@@ -16,6 +16,22 @@ const SiteDescription = styled.p`
   ${tw`text-base text-gray-700 font-light`}
 `;
 
+const SiteNavLink = styled(Link)`
+  ${tw`text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
+`;
+
+const NavList = styled.ul`
+  ${tw`flex mt-4 md:mt-0`}
+`;
+
+const NavListItem = styled.li`
+  ${tw`mr-2`}
+`;
+
+const NavListIconLink = styled.a`
+  ${tw`text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
+`;
+
 const Header = ({
   siteAuthor,
   siteDescription,
@@ -31,59 +47,32 @@ const Header = ({
       </SiteTitle>
     </Link>
     <nav>
-      <ul className="flex mt-4 md:md-0">
-        <li className="mr-2">
-          <Link
-            to="/about"
-            className="text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400"
-          >
-            About
-          </Link>
-        </li>
-        <li className="mr-2">
-          <Link
-            to="/projects"
-            className="text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400"
-          >
-            Projects
-          </Link>
-        </li>
-        <li className="mr-2">
-          <Link
-            to="/uses"
-            className="text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400"
-          >
-            Uses
-          </Link>
-        </li>
-        <li className="mr-2">
-          <a
-            href={twitterLink}
-            aria-label="Twitter Profile"
-            className="text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400"
-          >
+      <NavList>
+        <NavListItem>
+          <SiteNavLink to="/about">About</SiteNavLink>
+        </NavListItem>
+        <NavListItem>
+          <SiteNavLink to="/projects">Projects</SiteNavLink>
+        </NavListItem>
+        <NavListItem>
+          <SiteNavLink to="/uses">Uses</SiteNavLink>
+        </NavListItem>
+        <NavListItem>
+          <NavListIconLink href={twitterLink} aria-label="Twitter Profile">
             <FontAwesomeIcon icon={["fab", "twitter"]} />
-          </a>
-        </li>
-        <li className="mr-2">
-          <a
-            href={githubLink}
-            aria-label="Github Profile"
-            className="text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400"
-          >
+          </NavListIconLink>
+        </NavListItem>
+        <NavListItem>
+          <NavListIconLink href={githubLink} aria-label="Github Profile">
             <FontAwesomeIcon icon={["fab", "github"]} />
-          </a>
-        </li>
-        <li className="mr-2">
-          <a
-            href={linkedinLink}
-            aria-label="LinkedIn Profile"
-            className="text-blue-700 hover:text-blue-500"
-          >
+          </NavListIconLink>
+        </NavListItem>
+        <NavListItem>
+          <NavListIconLink href={linkedinLink} aria-label="LinkedIn Profile">
             <FontAwesomeIcon icon={["fab", "linkedin"]} />
-          </a>
-        </li>
-      </ul>
+          </NavListIconLink>
+        </NavListItem>
+      </NavList>
     </nav>
   </SiteHeaderContainer>
 );
