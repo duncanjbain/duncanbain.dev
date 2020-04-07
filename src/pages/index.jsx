@@ -20,11 +20,11 @@ const ArticleHeader = styled.h1`
 `;
 
 const ArticleTitle = styled.span`
-  ${tw`text-2xl text-gray-800 leading-snug`}
+  ${tw`text-2xl text-gray-900 leading-snug`}
 `;
 
 const ArticleDate = styled.p`
-  ${tw`text-xl text-gray-500 font-thin leading-snug`}
+  ${tw`text-xl text-gray-700 font-thin leading-snug`}
 `;
 
 const ArticleExcerpt = styled.p`
