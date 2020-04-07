@@ -11,49 +11,49 @@
 }
 
 .markdown > h4 {
-  @apply text-gray-800 mt-6 mb-2 -ml-1 text-lg font-semibold;
+  @apply ;
 }
 
 .markdown > h5 {
-  @apply text-gray-800 mt-6 mb-2 -ml-1 text-lg font-medium;
+  @apply ;
 }
 
 .markdown > h6 {
-  @apply text-gray-800 mt-6 mb-2 -ml-1 text-base font-semibold;
+  @apply ;
 }
 
 .markdown a {
-  @apply text-blue-700 leading-relaxed font-medium mb-8;
+  @apply ;
 }
 
 .markdown a:hover {
-  @apply text-blue-500;
+  @apply ;
 }
 
 .markdown > p {
-  @apply text-gray-800 leading-relaxed font-light mt-2 mb-4;
+  @apply ;
 }
 
 .markdown > blockquote {
-  @apply border-solid border-l-4 border-gray-300 pl-4;
+  @apply ;
 }
 
 .markdown ul {
-  @apply list-disc m-4;
+  @apply ;
 }
 
 .markdown ol {
-  @apply list-decimal m-4;
+  @apply ;
 }
 
 .markdown li {
-  @apply text-gray-800 font-light my-1;
+  @apply ;
 }
 
 .markdown strong {
-  @apply font-semibold;
+  @apply ;
 }
 
 .mardown em {
-  @apply italic;
+  @apply ;
 }

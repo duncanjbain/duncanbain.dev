@@ -2,6 +2,7 @@ import React from "react";
 import useSiteMetadata from "../hooks/UseSiteMetadata";
 import Header from "./Header";
 import Footer from "./Footer";
+import Intro from "./Intro";
 
 import "./Fontawesome";
 
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
           githubLink={site.siteMetadata.githubUrl}
           linkedinLink={site.siteMetadata.linkedinUrl}
         />
+        <Intro />
         {children}
         <Footer />
       </div>

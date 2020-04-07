@@ -20,7 +20,7 @@ const ArticleHeader = styled.h1`
 `;
 
 const ArticleTitle = styled.span`
-  ${tw`text-4xl text-gray-800 leading-snug`}
+  ${tw`text-2xl text-gray-800 leading-snug`}
 `;
 
 const ArticleDate = styled.p`
@@ -28,7 +28,7 @@ const ArticleDate = styled.p`
 `;
 
 const ArticleExcerpt = styled.p`
-  ${tw`text-2xl font-thin leading-snug`}
+  ${tw`text-xl font-thin leading-snug`}
 `;
 
 const IndexTemplate = ({ data }) => (
