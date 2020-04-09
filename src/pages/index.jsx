@@ -6,6 +6,7 @@ import tw from "tailwind.macro";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
+import Intro from "../components/Intro";
 
 const ArticleList = styled.section`
   ${tw`px-8 py-4 md:py-8`}
@@ -35,6 +36,7 @@ const IndexTemplate = ({ data }) => (
   <>
     <Layout>
       <SEO title="Home" />
+      <Intro />
       <ArticleList>
         {data.allMdx.nodes.map(({ id, frontmatter, fields, excerpt }) => (
           <Article key={id}>
