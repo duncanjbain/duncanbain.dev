@@ -9,11 +9,7 @@ const SiteHeaderContainer = styled.header`
 `;
 
 const SiteTitle = styled.h1`
-  ${tw`text-xl text-gray-800 font-medium flex flex-col`}
-`;
-
-const SiteDescription = styled.p`
-  ${tw`text-base text-gray-700 font-light`}
+  ${tw`text-4xl text-gray-800 font-bold`}
 `;
 
 const SiteNavLink = styled(Link)`
@@ -32,19 +28,10 @@ const NavListIconLink = styled.a`
   ${tw`text-2xl text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
 `;
 
-const Header = ({
-  siteAuthor,
-  siteDescription,
-  twitterLink,
-  githubLink,
-  linkedinLink,
-}) => (
+const Header = ({ siteAuthor, twitterLink, githubLink, linkedinLink }) => (
   <SiteHeaderContainer>
     <Link to="/">
-      <SiteTitle>
-        {siteAuthor}
-        <SiteDescription> {siteDescription}</SiteDescription>
-      </SiteTitle>
+      <SiteTitle>{siteAuthor}</SiteTitle>
     </Link>
     <nav>
       <NavList>
