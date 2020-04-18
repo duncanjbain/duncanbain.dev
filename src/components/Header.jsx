@@ -17,7 +17,7 @@ const SiteNavLink = styled(Link)`
 `;
 
 const NavContainer = styled.nav`
-  ${tw`my-6`}
+  ${tw`my-2`}
 `;
 
 const NavList = styled.ul`
