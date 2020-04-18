@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SiteHeaderContainer = styled.header`
-  ${tw`m-8 pb-4 flex flex-col md:flex-row md:items-end md:justify-between md:content-end border-b pb-8`}
+  ${tw`m-8 pb-4 flex flex-col md:flex-row md:items-end md:justify-between md:content-end border-b-2 pb-8`}
 `;
 
 const SiteTitle = styled.h1`
@@ -17,7 +17,7 @@ const SiteDescription = styled.p`
 `;
 
 const SiteNavLink = styled(Link)`
-  ${tw`text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
+  ${tw`text-2xl text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
 `;
 
 const NavList = styled.ul`
@@ -29,7 +29,7 @@ const NavListItem = styled.li`
 `;
 
 const NavListIconLink = styled.a`
-  ${tw`text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
+  ${tw`text-2xl text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
 `;
 
 const Header = ({
