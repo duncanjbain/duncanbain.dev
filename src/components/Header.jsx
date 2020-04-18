@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SiteHeaderContainer = styled.header`
-  ${tw`m-8 pb-4 flex flex-col md:flex-row md:items-end md:justify-between md:content-end border-b-2 pb-8`}
+  ${tw`m-8 pb-4 border-b-2`}
 `;
 
 const SiteTitle = styled.h1`
@@ -13,7 +13,7 @@ const SiteTitle = styled.h1`
 `;
 
 const SiteNavLink = styled(Link)`
-  ${tw`text-2xl text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
+  ${tw`text-xl md:text-2xl text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
 `;
 
 const NavList = styled.ul`
@@ -21,11 +21,11 @@ const NavList = styled.ul`
 `;
 
 const NavListItem = styled.li`
-  ${tw`mr-2`}
+  ${tw`md:mr-2`}
 `;
 
 const NavListIconLink = styled.a`
-  ${tw`text-2xl text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
+  ${tw`text-xl md:text-2xl text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
 `;
 
 const Header = ({ siteAuthor, twitterLink, githubLink, linkedinLink }) => (
@@ -33,7 +33,7 @@ const Header = ({ siteAuthor, twitterLink, githubLink, linkedinLink }) => (
     <Link to="/">
       <SiteTitle>{siteAuthor}</SiteTitle>
     </Link>
-    <nav>
+    <nav className="my-6">
       <NavList>
         <NavListItem>
           <SiteNavLink to="/about">About</SiteNavLink>
