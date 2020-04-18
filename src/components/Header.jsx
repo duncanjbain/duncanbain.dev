@@ -16,6 +16,10 @@ const SiteNavLink = styled(Link)`
   ${tw`text-xl md:text-2xl text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
 `;
 
+const NavContainer = styled.nav`
+  ${tw`my-6`}
+`;
+
 const NavList = styled.ul`
   ${tw`flex mt-4 md:mt-0`}
 `;
@@ -33,7 +37,7 @@ const Header = ({ siteAuthor, twitterLink, githubLink, linkedinLink }) => (
     <Link to="/">
       <SiteTitle>{siteAuthor}</SiteTitle>
     </Link>
-    <nav className="my-6">
+    <NavContainer>
       <NavList>
         <NavListItem>
           <SiteNavLink to="/about">About</SiteNavLink>
@@ -60,7 +64,7 @@ const Header = ({ siteAuthor, twitterLink, githubLink, linkedinLink }) => (
           </NavListIconLink>
         </NavListItem>
       </NavList>
-    </nav>
+    </NavContainer>
   </SiteHeaderContainer>
 );
 
