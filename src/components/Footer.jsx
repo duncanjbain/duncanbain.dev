@@ -4,7 +4,7 @@ import tw from "tailwind.macro";
 import React from "react";
 
 const FooterContainer = styled.footer`
-  ${tw`m-4 mx-8 text-center border-t pt-4`}
+  ${tw`m-4 mx-8 text-center border-t-2 pt-4`}
 `;
 
 const FooterText = styled.p`
