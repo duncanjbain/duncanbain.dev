@@ -47,6 +47,14 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Inter:100,200,300,400,500,600,700,800,900"],
+        },
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
@@ -57,11 +65,13 @@ module.exports = {
       resolve: "gatsby-plugin-mdx",
       options: {
         extensions: [".mdx", ".md"],
-        gatsbyRemarkPlugins: [
-          {
+        gatsbyRemarkPlugins: [{
             resolve: `gatsby-remark-prismjs`,
             options: {
-              aliases: { sh: "bash", js: "javascript" },
+              aliases: {
+                sh: "bash",
+                js: "javascript",
+              },
               showLineNumbers: true,
             },
           },

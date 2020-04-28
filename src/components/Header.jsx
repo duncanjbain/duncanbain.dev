@@ -13,7 +13,7 @@ const SiteTitle = styled.h1`
 `;
 
 const SiteNavLink = styled(Link)`
-  ${tw`text-xl md:text-2xl text-blue-700 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
+  ${tw`text-xl md:text-2xl text-blue-600 hover:text-blue-500 border-b-2 border-transparent p-2 hover:border-blue-400`}
 `;
 
 const NavContainer = styled.nav`
