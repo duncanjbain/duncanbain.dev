@@ -28,9 +28,9 @@ const Intro = () => (
       </span>{" "}
       <Name>I'm Duncan</Name>
       <BioText>
-        I'm a Mechanical Engineer who is learning to code. This where I share
-        things I've created and write about things I'm working on or anything
-        else that I find exciting.
+        I'm a Mechanical Engineer who's learning to code. This is where I share
+        the things that I've created, where I write about the things that I'm
+        working on and where I talk about anything else that excites me.
       </BioText>
     </IntroText>
   </IntroContainer>
