@@ -16,7 +16,7 @@ const Name = styled.span`
 `;
 
 const BioText = styled.p`
-  ${tw`font-normal text-xl md:text-2xl text-current`}
+  ${tw`font-normal text-xl md:text-2xl`}
 `;
 
 const Intro = () => (
