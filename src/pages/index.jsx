@@ -21,7 +21,7 @@ const ArticleHeader = styled.h1`
 `;
 
 const ArticleTitle = styled.span`
-  ${tw`text-2xl text-gray-900 leading-snug`}
+  ${tw`text-4xl text-gray-900 leading-snug`}
 `;
 
 const ArticleDate = styled.p`
