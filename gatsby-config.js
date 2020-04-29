@@ -47,11 +47,12 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        google: {
-          families: ["Inter:100,200,300,400,500,600,700,800,900"],
-        },
+        fonts: [
+          `inter:100,200,300,400,500,600,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
       },
     },
     {
