@@ -9,7 +9,7 @@ const SiteHeaderContainer = styled.header`
 `;
 
 const SiteTitle = styled.h1`
-  ${tw`text-4xl text-gray-800 font-bold`}
+  ${tw`text-4xl text-gray-800 font-bold ml-2`}
 `;
 
 const SiteNavLink = styled(Link)`
