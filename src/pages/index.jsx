@@ -9,27 +9,23 @@ import SEO from "../components/SEO";
 import Intro from "../components/Intro";
 
 const ArticleList = styled.section`
-  ${tw`px-8 py-4 md:py-8`}
+  ${tw`px-8 py-4 lg:py-8`}
 `;
 
 const Article = styled.article`
   ${tw`mb-12`}
 `;
 
-const ArticleHeader = styled.h1`
-  ${tw`mb-2`}
-`;
-
-const ArticleTitle = styled.span`
-  ${tw`text-4xl text-gray-900 leading-snug`}
+const ArticleTitle = styled.h2`
+  ${tw`leading-tight mb-2 mt-0 font-black text-gray-800 text-2xl lg:text-3xl`}
 `;
 
 const ArticleDate = styled.p`
-  ${tw`text-xl text-gray-700 font-thin leading-snug`}
+  ${tw`text-sm xl:text-base text-gray-500 mb-2`}
 `;
 
 const ArticleExcerpt = styled.p`
-  ${tw`text-xl font-thin leading-snug`}
+  ${tw`text-xl text-gray-700`}
 `;
 
 const IndexTemplate = ({ data }) => (
@@ -41,11 +37,9 @@ const IndexTemplate = ({ data }) => (
         {data.allMdx.nodes.map(({ id, frontmatter, fields, excerpt }) => (
           <Article key={id}>
             <Link to={fields.slug}>
-              <ArticleHeader>
-                <ArticleTitle>{frontmatter.title}</ArticleTitle>
-                <ArticleDate>{frontmatter.date}</ArticleDate>
-                <ArticleExcerpt>{excerpt}</ArticleExcerpt>
-              </ArticleHeader>
+              <ArticleTitle>{frontmatter.title}</ArticleTitle>
+              <ArticleDate>{frontmatter.date}</ArticleDate>
+              <ArticleExcerpt>{excerpt}</ArticleExcerpt>
             </Link>
           </Article>
         ))}
