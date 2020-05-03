@@ -22,10 +22,11 @@ const BioText = styled.p`
 const Intro = () => (
   <IntroContainer>
     <IntroText>
+      Hello!{" "}
       <span role="img" aria-label="Waving hand emoji icon">
         👋
       </span>{" "}
-      Hello! <Name>I'm Duncan</Name>
+      <Name>I'm Duncan</Name>
       <BioText>
         I'm a Mechanical Engineer who's learning to code. This is where I share
         the things that I've created, where I write about the things that I'm
