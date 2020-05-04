@@ -21,7 +21,7 @@ const ArticleTitle = styled.h2`
 `;
 
 const ArticleDate = styled.p`
-  ${tw`text-sm xl:text-base text-gray-500 mb-2`}
+  ${tw`text-base lg:text-xl text-gray-500 mb-2`}
 `;
 
 const ArticleExcerpt = styled.p`
