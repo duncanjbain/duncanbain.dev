@@ -863,10 +863,10 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
-  version "7.9.2"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.2.tgz#d90df0583a3a252f09aaa619665367bae518db06"
-  integrity sha512-NE2DtOdufG7R5vnfQUTehdTfNycfUANEtCa9PssN9O/xmTzP4E08UI797ixaei6hBEVL9BI/PsdJS5x7mWoB9Q==
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2", "@babel/runtime@^7.9.6":
+  version "7.9.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
+  integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -3229,6 +3229,21 @@ chokidar@3.3.1:
     is-glob "~4.0.1"
     normalize-path "~3.0.0"
     readdirp "~3.3.0"
+  optionalDependencies:
+    fsevents "~2.1.2"
+
+chokidar@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.4.0.tgz#b30611423ce376357c765b9b8f904b9fba3c0be8"
+  integrity sha512-aXAaho2VJtisB/1fg1+3nlLJqGOuewTzQpd/Tz0yTg2R0e4IGtshYvtjowyEumcBv2z+y4+kc75Mz7j5xJskcQ==
+  dependencies:
+    anymatch "~3.1.1"
+    braces "~3.0.2"
+    glob-parent "~5.1.0"
+    is-binary-path "~2.1.0"
+    is-glob "~4.0.1"
+    normalize-path "~3.0.0"
+    readdirp "~3.4.0"
   optionalDependencies:
     fsevents "~2.1.2"
 
@@ -5985,6 +6000,15 @@ gatsby-core-utils@^1.2.0:
     configstore "^5.0.1"
     node-object-hash "^2.0.0"
 
+gatsby-core-utils@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.2.1.tgz#9d5e89d0cf7b9e5d7d77a9dcb47071684f68ffd5"
+  integrity sha512-uyXgjvKdzfJ0yB8oTYmBjMUqM0AACx7aA8Ioubn6k/51C4tE5+LzrG/iG42di2UaTIbcBj6vcwrvRosNKWeeBQ==
+  dependencies:
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    node-object-hash "^2.0.0"
+
 gatsby-graphiql-explorer@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-0.3.3.tgz#563c08af97e4fb3378617c3bb6a7908b68f67af4"
@@ -6010,16 +6034,16 @@ gatsby-link@^2.3.4:
     "@types/reach__router" "^1.3.3"
     prop-types "^15.7.2"
 
-gatsby-page-utils@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-0.1.3.tgz#e6038ab6474f77a71fe65fcb769a04870185fa75"
-  integrity sha512-X2XfuDGq0nMR53V8TaLtCi7SDGxS8pHPDFiNTRlkGMcDsFZlR/7T6PaIj3Ih062P4hN1GZyemHWDbEIzfOm4BA==
+gatsby-page-utils@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-0.2.1.tgz#1e35729419f08143753c611aae294bcf0a7b116b"
+  integrity sha512-D/pSgY1c6IhblTq9oSankYLRxVkr8aKnGpvibYE3sBqSHrVe6D9lrvtRH3A5Nc4qtGBqHJB7D+YIJW05SHqpfA==
   dependencies:
-    "@babel/runtime" "^7.8.7"
+    "@babel/runtime" "^7.9.6"
     bluebird "^3.7.2"
-    chokidar "3.3.1"
+    chokidar "3.4.0"
     fs-exists-cached "^1.0.0"
-    gatsby-core-utils "^1.1.3"
+    gatsby-core-utils "^1.2.1"
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"
@@ -6091,15 +6115,15 @@ gatsby-plugin-netlify@^2.2.1:
     lodash "^4.17.15"
     webpack-assets-manifest "^3.1.1"
 
-gatsby-plugin-page-creator@^2.2.1, gatsby-plugin-page-creator@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.2.3.tgz#a6e8ef426d2bf447c002976ec9b48ad82ca20760"
-  integrity sha512-GHrzg1clFvYzO/KgpiEuLQNa9janJEA18xqzV9zrpe9+bEJ/no6jLWQOeyPhhwkKdlLb+XUMJEdX5RspozVZhA==
+gatsby-plugin-page-creator@^2.2.3, gatsby-plugin-page-creator@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.3.1.tgz#59bb6817d619fa9fec6f98d71add2d4a7d2a7808"
+  integrity sha512-zjBjLmVwFQr66UEszNgiAe+ruirOWiBvg+uKnMCRYcl9/lYXGYxuQQZ5WWYNeyA10aYB/U2s5Wy5vLS4wtK51Q==
   dependencies:
-    "@babel/runtime" "^7.8.7"
+    "@babel/runtime" "^7.9.6"
     bluebird "^3.7.2"
     fs-exists-cached "^1.0.0"
-    gatsby-page-utils "^0.1.3"
+    gatsby-page-utils "^0.2.1"
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"
@@ -11566,6 +11590,13 @@ readdirp@~3.3.0:
   integrity sha512-zz0pAkSPOXXm1viEwygWIPSPkcBYjW1xU5j/JBh5t9bGCJwa6f9+BJa6VaB2g+b55yVrmXzqkyLf4xaWYM0IkQ==
   dependencies:
     picomatch "^2.0.7"
+
+readdirp@~3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-3.4.0.tgz#9fdccdf9e9155805449221ac645e8303ab5b9ada"
+  integrity sha512-0xe001vZBnJEK+uKcj8qOhyAKPzIT+gStxWr3LCB0DwcXR5NZJ3IaC+yGnHCYzB/S7ov3m3EEbZI2zeNvX+hGQ==
+  dependencies:
+    picomatch "^2.2.1"
 
 recursive-readdir@2.2.1:
   version "2.2.1"
