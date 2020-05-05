@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import useSiteMetadata from "../hooks/UseSiteMetadata";
 import favicon16 from "../images/favicon-16x16.png";
 import favicon32 from "../images/favicon-32x32.png";
