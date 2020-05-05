@@ -17,7 +17,7 @@ const Article = styled.article`
 `;
 
 const ArticleTitle = styled.h2`
-  ${tw`leading-tight mb-2 mt-0 font-black text-gray-800 text-2xl lg:text-3xl`}
+  ${tw`leading-tight mb-2 mt-0 font-black text-gray-800 text-2xl lg:text-3xl hover:underline`}
 `;
 
 const ArticleDate = styled.p`
@@ -38,9 +38,9 @@ const IndexTemplate = ({ data }) => (
           <Article key={id}>
             <Link to={fields.slug}>
               <ArticleTitle>{frontmatter.title}</ArticleTitle>
-              <ArticleDate>{frontmatter.date}</ArticleDate>
-              <ArticleExcerpt>{excerpt}</ArticleExcerpt>
             </Link>
+            <ArticleDate>{frontmatter.date}</ArticleDate>
+            <ArticleExcerpt>{excerpt}</ArticleExcerpt>
           </Article>
         ))}
       </ArticleList>
