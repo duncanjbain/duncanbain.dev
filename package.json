@@ -20,7 +20,7 @@
     "gatsby-plugin-netlify": "^2.2.1",
     "gatsby-plugin-page-creator": "^2.3.1",
     "gatsby-plugin-postcss": "^2.1.22",
-    "gatsby-plugin-preload-fonts": "^1.2.0",
+    "gatsby-plugin-preload-fonts": "^1.2.1",
     "gatsby-plugin-purgecss": "^4.0.1",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-react-helmet-canonical-urls": "^1.4.0",
