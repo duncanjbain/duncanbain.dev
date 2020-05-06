@@ -30,7 +30,10 @@ const Footer = () => (
       <FooterLink to="/" className="">
         Duncan Bain
       </FooterLink>{" "}
-      with <FooterExternalLink href="https://gatsbyjs.org">Gatsby</FooterExternalLink>
+      with{" "}
+      <FooterExternalLink href="https://gatsbyjs.org">
+        Gatsby
+      </FooterExternalLink>
     </FooterText>
   </FooterContainer>
 );
