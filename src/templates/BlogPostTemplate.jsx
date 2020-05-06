@@ -12,7 +12,7 @@ const Article = styled.section`
 `;
 
 const ArticleHeader = styled.h2`
-  ${tw`text-3xl text-gray-800 font-medium leading-snug mb-2`}
+  ${tw`text-4xl text-gray-800 font-black leading-snug mb-2`}
 `;
 
 const ArticleDescription = styled.p`
@@ -20,7 +20,7 @@ const ArticleDescription = styled.p`
 `;
 
 const ArticleDate = styled.p`
-  ${tw`text-xs text-gray-500 font-thin`}
+  ${tw`text-lg text-gray-500`}
 `;
 const ArticleH2 = styled.h2`
   ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-xl font-extrabold tracking-wider`}
@@ -83,8 +83,8 @@ export default ({ data, pageContext }) => {
       <SEO title={frontmatter.title} description={frontmatter.description} />
       <Article>
         <ArticleHeader>{frontmatter.title}</ArticleHeader>
-        <ArticleDescription>{frontmatter.description}</ArticleDescription>
         <ArticleDate>{frontmatter.date}</ArticleDate>
+        <ArticleDescription>{frontmatter.description}</ArticleDescription>
         <div className="markdown">
           <MDXProvider
             components={{
