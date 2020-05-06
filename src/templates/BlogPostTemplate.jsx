@@ -16,11 +16,11 @@ const ArticleHeader = styled.h2`
 `;
 
 const ArticleDescription = styled.p`
-  ${tw`text-lg text-gray-800 font-light mb-2`}
+  ${tw`text-gray-800 leading-relaxed text-lg xl:text-xl `}
 `;
 
 const ArticleDate = styled.p`
-  ${tw`text-lg text-gray-500`}
+  ${tw`text-lg text-gray-500 mb-2 lg:mb-4`}
 `;
 const ArticleH2 = styled.h2`
   ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-xl font-extrabold tracking-wider`}
