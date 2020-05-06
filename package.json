@@ -40,7 +40,7 @@
     "react-helmet": "^6.0.0",
     "styled-components": "^5.0.1",
     "tailwind.macro": "^1.0.0-alpha.10",
-    "tailwindcss": "^1.2"
+    "tailwindcss": "^1.4"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
