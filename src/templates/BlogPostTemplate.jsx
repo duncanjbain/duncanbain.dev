@@ -43,7 +43,7 @@ const ArticleH6 = styled.h6`
 `;
 
 const ArticlePara = styled.p`
-  ${tw`text-gray-800 leading-relaxed font-light mt-2 mb-4`}
+  ${tw`text-gray-800 leading-relaxed text-lg xl:text-xl mt-2 mb-4 break-words`}
 `;
 
 const ArticleBlockQuote = styled.blockquote`
