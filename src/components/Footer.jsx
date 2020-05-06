@@ -15,6 +15,10 @@ const FooterLink = styled(Link)`
   ${tw`text-blue-700 hover:text-blue-500`}
 `;
 
+const FooterExternalLink = styled.a`
+  ${tw`text-blue-700 hover:text-blue-500`}
+`;
+
 const Footer = () => (
   <FooterContainer>
     <FooterText>
@@ -26,7 +30,7 @@ const Footer = () => (
       <FooterLink to="/" className="">
         Duncan Bain
       </FooterLink>{" "}
-      with <FooterLink href="https://gatsbyjs.org">Gatsby</FooterLink>
+      with <FooterExternalLink href="https://gatsbyjs.org">Gatsby</FooterExternalLink>
     </FooterText>
   </FooterContainer>
 );
