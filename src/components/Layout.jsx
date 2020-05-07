@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   const site = useSiteMetadata();
   return (
     <>
-      <div className="container mx-auto md:w-3/4 lg:w-2/3 xl:w-1/2">
+      <div className="container mx-auto md:w-3/4 lg:w-2/3">
         <Header
           siteDescription={site.siteMetadata.description}
           siteAuthor={site.siteMetadata.author}
