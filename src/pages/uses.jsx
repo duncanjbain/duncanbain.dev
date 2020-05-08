@@ -1,8 +1,86 @@
 import React from "react";
 import Layout from "../components/Layout";
+import {
+  Article,
+  ArticleHeader,
+  ArticlePara,
+  ArticleH2,
+  ArticleH3,
+  ArticleUl,
+  ArticleLi,
+} from "../styles/PostStyles";
 
 export default () => (
   <Layout title="About">
-    <p>Uses info to go here...</p>
+    <Article>
+      <ArticleHeader>Uses</ArticleHeader>
+      <ArticlePara>
+        Inspirsed by Wes Bos and his users.tech website, I thought I&apos;d jump
+        on the bandwagon and share my development stack!
+      </ArticlePara>
+      <ArticleH2>Software</ArticleH2>
+      <ArticleH3>
+        {" "}
+        <span role="img" aria-label="Laptop emoji">
+          ⌨️
+        </span>{" "}
+        Editor + Terminal
+      </ArticleH3>
+      <ArticleUl>
+        <ArticleLi>
+          <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+        </ArticleLi>
+        <ArticleUl>
+          <ArticleLi>
+            Theme:{" "}
+            <a href="https://marketplace.visualstudio.com/items?itemName=sdras.night-owl">
+              Night Owl
+            </a>
+          </ArticleLi>
+          <ArticleLi>
+            Font:{" "}
+            <a href="https://github.com/microsoft/cascadia-code">
+              Microsoft Cascadia Code
+            </a>
+          </ArticleLi>
+          <ArticleLi>Extensions</ArticleLi>
+          <ArticleUl>
+            <ArticleLi>ESLint</ArticleLi>
+            <ArticleLi>GitLens</ArticleLi>
+            <ArticleLi>MDX</ArticleLi>
+            <ArticleLi>Markdown Preview Enhanced</ArticleLi>
+            <ArticleLi>Rainbow Brackets</ArticleLi>
+            <ArticleLi>Rewrap</ArticleLi>
+            <ArticleLi>Code Time</ArticleLi>
+          </ArticleUl>
+        </ArticleUl>
+        <ArticleLi>Windows Terminal</ArticleLi>
+        <ArticleLi>Gnome Terminal</ArticleLi>
+      </ArticleUl>
+      <ArticleH2>
+        <span role="img" aria-label="Laptop emoji">
+          💻
+        </span>{" "}
+        Hardware
+      </ArticleH2>
+      <ArticleH2>
+        <span role="img" aria-label="Backpack emoji">
+          🎒
+        </span>{" "}
+        Gear
+      </ArticleH2>
+      <ArticleH2>
+        <span role="img" aria-label="Headphone emoji">
+          🎧
+        </span>{" "}
+        Podcasts
+      </ArticleH2>
+      <ArticleH2>
+        <span role="img" aria-label="Rocket emoji">
+          🚀
+        </span>{" "}
+        This Site&apos;s Dev Stack
+      </ArticleH2>
+    </Article>
   </Layout>
 );
