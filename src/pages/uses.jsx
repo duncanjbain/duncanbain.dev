@@ -8,6 +8,7 @@ import {
   ArticleH3,
   ArticleUl,
   ArticleLi,
+  ArticleA,
 } from "../styles/PostStyles";
 
 export default () => (
@@ -28,20 +29,22 @@ export default () => (
       </ArticleH3>
       <ArticleUl>
         <ArticleLi>
-          <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+          <ArticleA href="https://code.visualstudio.com/">
+            Visual Studio Code
+          </ArticleA>
         </ArticleLi>
         <ArticleUl>
           <ArticleLi>
             Theme:{" "}
-            <a href="https://marketplace.visualstudio.com/items?itemName=sdras.night-owl">
+            <ArticleA href="https://marketplace.visualstudio.com/items?itemName=sdras.night-owl">
               Night Owl
-            </a>
+            </ArticleA>
           </ArticleLi>
           <ArticleLi>
             Font:{" "}
-            <a href="https://github.com/microsoft/cascadia-code">
+            <ArticleA href="https://github.com/microsoft/cascadia-code">
               Microsoft Cascadia Code
-            </a>
+            </ArticleA>
           </ArticleLi>
           <ArticleLi>Extensions</ArticleLi>
           <ArticleUl>
