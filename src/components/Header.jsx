@@ -14,6 +14,7 @@ const SiteTitle = styled.h1`
 
 const SiteNavLink = styled(Link)`
   ${tw`text-xl md:text-2xl text-blue-600 hover:text-blue-500 border-b-4 border-transparent p-2 hover:border-blue-400`}
+  transition: border 0.3s ease, color 0.3s ease;
 `;
 
 const NavContainer = styled.nav`
@@ -30,6 +31,7 @@ const NavListItem = styled.li`
 
 const NavListIconLink = styled.a`
   ${tw`text-xl md:text-2xl text-blue-600 hover:text-blue-500 border-b-4 border-transparent p-2 hover:border-blue-400`}
+  transition: border 0.3s ease, color 0.3s ease;
 `;
 
 const Header = ({ siteAuthor, twitterLink, githubLink, linkedinLink }) => (
