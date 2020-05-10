@@ -16,8 +16,9 @@ export default () => (
     <Article>
       <ArticleHeader>Uses</ArticleHeader>
       <ArticlePara>
-        Inspirsed by Wes Bos and his users.tech website, I thought I&apos;d jump
-        on the bandwagon and share my development stack!
+        Inspirsed by Wes Bos and his{" "}
+        <ArticleA href="https://uses.tech">users.tech</ArticleA> website, I
+        thought I&apos;d jump on the bandwagon and share my development stack!
       </ArticlePara>
       <ArticleH2>Software</ArticleH2>
       <ArticleH3>
@@ -38,7 +39,8 @@ export default () => (
             Theme:{" "}
             <ArticleA href="https://marketplace.visualstudio.com/items?itemName=sdras.night-owl">
               Night Owl
-            </ArticleA>
+            </ArticleA>{" "}
+            by <ArticleA href="https://sarah.dev/">Sarah Drasner</ArticleA>
           </ArticleLi>
           <ArticleLi>
             Font:{" "}

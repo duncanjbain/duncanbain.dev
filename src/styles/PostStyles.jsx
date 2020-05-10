@@ -45,15 +45,15 @@ export const ArticleBlockQuote = styled.blockquote`
 `;
 
 export const ArticleUl = styled.ul`
-  ${tw`list-disc m-4 leading-relaxed text-lg xl:text-xl text-gray-800`}
+  ${tw`list-disc my-2 mx-4 leading-relaxed text-lg xl:text-xl text-gray-800`}
 `;
 
 export const ArticleOl = styled.ol`
-  ${tw`text-gray-800 list-decimal m-4 leading-relaxed text-lg xl:text-xl`}
+  ${tw`text-gray-800 list-decimal my-2 mx-4 leading-relaxed text-lg xl:text-xl`}
 `;
 
 export const ArticleLi = styled.li`
-  ${tw`text-gray-800 my-1 leading-relaxed text-lg xl:text-xl`}
+  ${tw`text-gray-800 my-1 mx-2 leading-relaxed text-lg xl:text-xl`}
 `;
 
 export const ArticleStrong = styled.strong`
