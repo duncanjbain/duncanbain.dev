@@ -17,15 +17,15 @@ export const ArticleDate = styled.p`
   ${tw`text-lg text-gray-500 mb-2 lg:mb-4`}
 `;
 export const ArticleH2 = styled.h2`
-  ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-2xl font-extrabold tracking-wider`}
+  ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-3xl font-extrabold tracking-wider`}
 `;
 
 export const ArticleH3 = styled.h3`
-  ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-xl font-bold`}
+  ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-2xl font-bold`}
 `;
 
 export const ArticleH4 = styled.h4`
-  ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-lg font-semibold`}
+  ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-xl font-semibold`}
 `;
 
 export const ArticleH5 = styled.h5`
@@ -41,27 +41,27 @@ export const ArticlePara = styled.p`
 `;
 
 export const ArticleBlockQuote = styled.blockquote`
-  ${tw`border-solid border-l-4 border-gray-300 pl-4`}
+  ${tw`border-solid border-l-4 border-gray-300 pl-4 leading-relaxed text-lg xl:text-xl`}
 `;
 
 export const ArticleUl = styled.ul`
-  ${tw`list-disc m-4`}
+  ${tw`list-disc m-4 leading-relaxed text-lg xl:text-xl text-gray-800`}
 `;
 
 export const ArticleOl = styled.ol`
-  ${tw`list-decimal m-4`}
+  ${tw`text-gray-800 list-decimal m-4 leading-relaxed text-lg xl:text-xl`}
 `;
 
 export const ArticleLi = styled.li`
-  ${tw`text-gray-800 font-light my-1`}
+  ${tw`text-gray-800 my-1 leading-relaxed text-lg xl:text-xl`}
 `;
 
 export const ArticleStrong = styled.strong`
-  ${tw`font-semibold`}
+  ${tw`font-semibold leading-relaxed text-lg xl:text-xl`}
 `;
 
 export const ArticleEm = styled.em`
-  ${tw`italic`}
+  ${tw`italic leading-relaxed text-lg xl:text-xl`}
 `;
 
 export const ArticleA = styled.a`
