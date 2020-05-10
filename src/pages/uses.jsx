@@ -9,6 +9,7 @@ import {
   ArticleUl,
   ArticleLi,
   ArticleA,
+  ArticleOl,
 } from "../styles/PostStyles";
 
 export default () => (
@@ -50,8 +51,19 @@ export default () => (
           </ArticleLi>
           <ArticleLi>Extensions</ArticleLi>
           <ArticleUl>
-            <ArticleLi>ESLint</ArticleLi>
-            <ArticleLi>GitLens</ArticleLi>
+            <ArticleLi>
+              <ArticleA href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">
+                ESLint
+              </ArticleA>{" "}
+              - Integrates ESLint with VS Code.
+            </ArticleLi>
+            <ArticleLi>
+              <ArticleA href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">
+                GitLens
+              </ArticleA>{" "}
+              - Gives a great indepth look into what lines of code were changed,
+              who changed it and why.
+            </ArticleLi>
             <ArticleLi>MDX</ArticleLi>
             <ArticleLi>Markdown Preview Enhanced</ArticleLi>
             <ArticleLi>Rainbow Brackets</ArticleLi>
@@ -59,8 +71,19 @@ export default () => (
             <ArticleLi>Code Time</ArticleLi>
           </ArticleUl>
         </ArticleUl>
-        <ArticleLi>Windows Terminal</ArticleLi>
-        <ArticleLi>Gnome Terminal</ArticleLi>
+        <ArticleLi>
+          <ArticleA href="https://github.com/microsoft/terminal">
+            Windows Terminal
+          </ArticleA>{" "}
+          - An excellent new terminal from Microsoft. Easily allows you to
+          switch between PowerShell and WSL installations and supports multiple
+          tabs amongst other things. Definitely worth checking out!
+        </ArticleLi>
+        <ArticleLi>
+          <ArticleA href="https://wiki.gnome.org/Apps/Terminal">
+            Gnome Terminal
+          </ArticleA>
+        </ArticleLi>
       </ArticleUl>
       <ArticleH2>
         <span role="img" aria-label="Laptop emoji">
@@ -68,6 +91,9 @@ export default () => (
         </span>{" "}
         Hardware
       </ArticleH2>
+      <ArticleOl>
+        <ArticleLi>Surface Pro 4 - Core m3-6Y30 </ArticleLi>
+      </ArticleOl>
       <ArticleH2>
         <span role="img" aria-label="Backpack emoji">
           🎒
