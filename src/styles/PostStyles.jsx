@@ -17,23 +17,23 @@ export const ArticleDate = styled.p`
   ${tw`text-lg text-gray-500 mb-2 lg:mb-4`}
 `;
 export const ArticleH2 = styled.h2`
-  ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-3xl font-extrabold tracking-wider`}
+  ${tw`text-gray-800 mt-8 mb-2 -ml-1 text-3xl font-extrabold tracking-wider`}
 `;
 
 export const ArticleH3 = styled.h3`
-  ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-2xl font-bold`}
+  ${tw`text-gray-800 mt-8 mb-2 -ml-1 text-2xl font-bold`}
 `;
 
 export const ArticleH4 = styled.h4`
-  ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-xl font-semibold`}
+  ${tw`text-gray-800 mt-8 mb-2 -ml-1 text-xl font-semibold`}
 `;
 
 export const ArticleH5 = styled.h5`
-  ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-lg font-medium`}
+  ${tw`text-gray-800 mt-8 mb-2 -ml-1 text-lg font-medium`}
 `;
 
 export const ArticleH6 = styled.h6`
-  ${tw`text-gray-800 mt-6 mb-2 -ml-1 text-base font-semibold`}
+  ${tw`text-gray-800 mt-8 mb-2 -ml-1 text-base font-semibold`}
 `;
 
 export const ArticlePara = styled.p`
