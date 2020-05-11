@@ -1,15 +1,52 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "tailwind.macro";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-const CardContainer = styled.article`
+const Card = styled.article`
   ${tw`max-w-sm rounded overflow-hidden shadow-lg`}
 `;
 
-const ProjectCard = ({ projectImgAlt, projectTitle, projectCaption }) => {
+const ProjectCard = ({
+  projectImgSrc,
+  projectImgAlt,
+  projectTitle,
+  projectCaption,
+}) => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        images: allFile(
+          filter: { extension: { regex: "/jpeg|jpg|png|gif/" } }
+        ) {
+          edges {
+            node {
+              extension
+              relativePath
+              childImageSharp {
+                fluid(maxWidth: 960) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
+  const image = data.images.edges.find(
+    (k) => projectImgSrc.indexOf(k.node.relativePath) > -1
+  );
+
   return (
-    <CardContainer>
-      <img className="w-full" src="" alt={projectImgAlt} />
+    <Card>
+      <Img
+        css={tw`w-full`}
+        fluid={image.node.childImageSharp.fluid}
+        alt={projectImgAlt}
+      />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{projectTitle}</div>
         <p className="text-gray-700 text-base">{projectCaption}</p>
@@ -25,7 +62,7 @@ const ProjectCard = ({ projectImgAlt, projectTitle, projectCaption }) => {
           #winter
         </span>
       </div>
-    </CardContainer>
+    </Card>
   );
 };
 

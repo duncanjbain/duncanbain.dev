@@ -5,7 +5,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import {
-  Article,
+  ArticleContainer,
   ArticleHeader,
   ArticleDescription,
   ArticleDate,
@@ -31,7 +31,7 @@ export default ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title={frontmatter.title} description={frontmatter.description} />
-      <Article>
+      <ArticleContainer>
         <ArticleHeader>{frontmatter.title}</ArticleHeader>
         <ArticleDate>{frontmatter.date}</ArticleDate>
         <ArticleDescription>{frontmatter.description}</ArticleDescription>
@@ -75,7 +75,7 @@ export default ({ data, pageContext }) => {
             )}
           </>
         )}
-      </Article>
+      </ArticleContainer>
     </Layout>
   );
 };
