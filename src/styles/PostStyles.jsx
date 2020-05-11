@@ -37,7 +37,7 @@ export const ArticleH6 = styled.h6`
 `;
 
 export const ArticlePara = styled.p`
-  ${tw`text-gray-800 leading-relaxed text-lg xl:text-xl mt-2 mb-4 break-words`}
+  ${tw`text-gray-800 leading-relaxed text-base xl:text-xl mt-2 mb-4`}
 `;
 
 export const ArticleBlockQuote = styled.blockquote`
@@ -45,23 +45,23 @@ export const ArticleBlockQuote = styled.blockquote`
 `;
 
 export const ArticleUl = styled.ul`
-  ${tw`list-disc my-2 mx-4 leading-relaxed text-lg xl:text-xl text-gray-800`}
+  ${tw`list-disc my-2 ml-4 leading-relaxed text-base xl:text-xl text-gray-800`}
 `;
 
 export const ArticleOl = styled.ol`
-  ${tw`text-gray-800 list-decimal my-2 mx-4 leading-relaxed text-lg xl:text-xl`}
+  ${tw`text-gray-800 list-decimal my-2 ml-4 leading-relaxed text-base xl:text-xl`}
 `;
 
 export const ArticleLi = styled.li`
-  ${tw`text-gray-800 my-1 mx-2 leading-relaxed text-lg xl:text-xl`}
+  ${tw`text-gray-800 my-1 ml-2 leading-relaxed text-base xl:text-xl`}
 `;
 
 export const ArticleStrong = styled.strong`
-  ${tw`font-semibold leading-relaxed text-lg xl:text-xl`}
+  ${tw`font-semibold leading-relaxed text-base xl:text-xl`}
 `;
 
 export const ArticleEm = styled.em`
-  ${tw`italic leading-relaxed text-lg xl:text-xl`}
+  ${tw`italic leading-relaxed text-base xl:text-xl`}
 `;
 
 export const ArticleA = styled.a`
