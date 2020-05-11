@@ -6,7 +6,7 @@ import ProjectCard from "../components/ProjectCard";
 import { ArticleContainer } from "../styles/PostStyles";
 
 const CardContainer = styled.div`
-  ${tw`flex flex-wrap flex-col md:flex-row`}
+  ${tw`flex flex-wrap flex-col  md:flex-row`}
 `;
 
 export default () => (

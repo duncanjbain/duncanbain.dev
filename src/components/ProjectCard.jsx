@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
 const Card = styled.article`
-  ${tw`max-w-sm rounded overflow-hidden shadow-lg`}
+  ${tw`max-w-1/3 flex-auto rounded overflow-hidden shadow-lg mx-2 my-4`}
 `;
 
 const ProjectCard = ({
