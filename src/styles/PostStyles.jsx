@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import tw from "tailwind.macro";
 
-export const Article = styled.section`
+export const ArticleContainer = styled.section`
   ${tw`px-8 break-words md:mt-12 mb-16`}
 `;
 

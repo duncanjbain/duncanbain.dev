@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import {
-  Article,
+  ArticleContainer,
   ArticleHeader,
   ArticlePara,
   ArticleH2,
@@ -13,7 +13,7 @@ import {
 
 export default () => (
   <Layout title="About">
-    <Article>
+    <ArticleContainer>
       <ArticleHeader>Uses</ArticleHeader>
       <ArticlePara>
         Inspirsed by Wes Bos and his{" "}
@@ -230,6 +230,6 @@ export default () => (
           static websites.
         </ArticleLi>
       </ArticleUl>
-    </Article>
+    </ArticleContainer>
   </Layout>
 );
