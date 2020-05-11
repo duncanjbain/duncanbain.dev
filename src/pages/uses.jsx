@@ -60,8 +60,8 @@ export default () => (
               <ArticleA href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">
                 GitLens
               </ArticleA>{" "}
-              - Gives a great indepth look into what lines of code were changed,
-              who changed it and why.
+              - Gives a great in depth look into what lines of code were
+              changed, who changed it and why.
             </ArticleLi>
             <ArticleLi>
               <ArticleA href="https://marketplace.visualstudio.com/items?itemName=silvenon.mdx">
@@ -86,7 +86,7 @@ export default () => (
               <ArticleA href="https://marketplace.visualstudio.com/items?itemName=stkb.rewrap">
                 Rewrap
               </ArticleA>{" "}
-              - Hard re-wraps text to a specified length.
+              - Hard wraps text to a specified length.
             </ArticleLi>
             <ArticleLi>
               <ArticleA href="https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode">
@@ -209,6 +209,27 @@ export default () => (
         </span>{" "}
         This Site&apos;s Dev Stack
       </ArticleH2>
+      <ArticleUl>
+        <ArticleLi>
+          <ArticleA href="https://www.gatsbyjs.org/">Gatsby</ArticleA> - A React
+          based static site generator powered by GraphQL.
+        </ArticleLi>
+        <ArticleLi>
+          <ArticleA href="https://tailwindcss.com/">Tailwind CSS</ArticleA> - A
+          great low level utility-class based CSS framework.
+        </ArticleLi>
+        <ArticleLi>
+          <ArticleA href="https://styled-components.com/">
+            Styled-Components
+          </ArticleA>{" "}
+          - A CSS-in-JS styling framework.
+        </ArticleLi>
+        <ArticleLi>
+          <ArticleA href="https://www.netlify.com/">Netlify</ArticleA> - A
+          one-click, continuous deployment, CDN backed hosting solution for
+          static websites.
+        </ArticleLi>
+      </ArticleUl>
     </Article>
   </Layout>
 );
