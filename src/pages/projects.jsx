@@ -6,7 +6,7 @@ import ProjectCard from "../components/ProjectCard";
 import { ArticleContainer } from "../styles/PostStyles";
 
 const CardContainer = styled.div`
-  ${tw`flex flex-wrap flex-col justify-start lg:flex-row`}
+  ${tw`max-w-1/3 flex flex-wrap flex-col justify-start lg:flex-row`}
 `;
 
 export default () => (
@@ -14,9 +14,9 @@ export default () => (
     <ArticleContainer>
       <CardContainer>
         <ProjectCard
-          projectImgSrc="card_one.jpeg"
-          projectTitle="Test Title"
-          projectCaption="Test Caption"
+          projectImgSrc="/duncanbaindev/duncanbaindev.png"
+          projectTitle="Personal Website, blog and portfolio"
+          projectCaption="A personal website created using Gatsby, Tailwind CSS and Styled-Components. Hosted on Netlify."
         />
         <ProjectCard
           projectImgSrc="card_one.jpeg"

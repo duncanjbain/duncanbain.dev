@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
 const Card = styled.article`
-  ${tw`max-w-1/3 flex-auto rounded shadow-lg mx-2 my-4 flex flex-col`}
+  ${tw`w-full lg:w-1/3 flex-auto rounded shadow-lg mx-2 my-4 flex flex-col`}
 `;
 
 const ProjectCard = ({
@@ -48,8 +48,8 @@ const ProjectCard = ({
         alt={projectImgAlt}
       />
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{projectTitle}</div>
-        <p className="text-gray-700 text-base">{projectCaption}</p>
+        <div className="font-bold text-2xl mb-2">{projectTitle}</div>
+        <p className="text-gray-800 text-lg">{projectCaption}</p>
       </div>
       <div className="px-6 py-4">
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
