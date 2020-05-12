@@ -9,6 +9,29 @@ const Card = styled.article`
   ${tw`w-full md:w-1/3 flex-auto rounded shadow-lg my-4 flex flex-col md:mx-4`}
 `;
 
+const CardDescrCont = styled.div`
+  ${tw`px-6 py-4`}
+`;
+
+const CardTitle = styled.h2`
+  ${tw`font-bold text-xl md:text-2xl mb-2`}
+`;
+
+const CardCaption = styled.p`
+  ${tw`text-gray-800 text-base md:text-xl`}
+`;
+
+const CardButtonCont = styled.div`
+  ${tw`px-6 py-4 flex flex-row space-x-4 justify-center`}
+`;
+
+const CardButton = styled.a`
+  ${tw`px-2 py-2 bg-blue-600
+  shadow-lg border rounded-lg text-white 
+  font-semibold focus:outline-none focus:shadow-outline 
+  hover:bg-blue-500 active:bg-blue-500`}
+`;
+
 const ProjectCard = ({
   projectImgSrc,
   projectImgAlt,
@@ -50,24 +73,16 @@ const ProjectCard = ({
         fluid={image.node.childImageSharp.fluid}
         alt={projectImgAlt}
       />
-      <div className="px-6 py-4">
-        <div className="font-bold text-2xl mb-2">{projectTitle}</div>
-        <p className="text-gray-800 text-lg">{projectCaption}</p>
-      </div>
-      <div className="px-6 py-4 flex flex-row space-x-4 justify-center">
-        <a
-          href={projectRepo}
-          className="px-2 py-2 bg-blue-600 shadow-lg border rounded-lg text-white font-semibold focus:outline-none focus:shadow-outline hover:bg-blue-500 active:bg-blue-500"
-        >
+      <CardDescrCont>
+        <CardTitle>{projectTitle}</CardTitle>
+        <CardCaption>{projectCaption}</CardCaption>
+      </CardDescrCont>
+      <CardButtonCont>
+        <CardButton href={projectRepo}>
           <FontAwesomeIcon icon={["fab", "github"]} /> Github Repo
-        </a>
-        <a
-          href={projectDemo}
-          className="px-4 py-2 bg-blue-600 shadow-lg border rounded-lg text-white font-semibold focus:outline-none focus:shadow-outline hover:bg-blue-500 active:bg-blue-500"
-        >
-          Project Demo
-        </a>
-      </div>
+        </CardButton>
+        <CardButton href={projectDemo}>Demo</CardButton>
+      </CardButtonCont>
     </Card>
   );
 };
