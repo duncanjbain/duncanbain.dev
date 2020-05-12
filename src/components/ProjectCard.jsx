@@ -22,7 +22,7 @@ const CardCaption = styled.p`
 `;
 
 const CardButtonCont = styled.div`
-  ${tw`px-6 py-4 flex flex-row space-x-4 justify-center`}
+  ${tw`px-6 py-4 flex flex-row justify-center`}
 `;
 
 const CardButton = styled.a`

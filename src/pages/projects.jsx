@@ -20,41 +20,6 @@ export default () => (
           projectRepo="https://github.com/duncanjbain/duncanbain.dev"
           projectDemo="https://duncanbain.dev"
         />
-        <ProjectCard
-          projectImgSrc="card_one.jpeg"
-          projectTitle="Test Title"
-          projectCaption="Test Caption"
-        />
-        <ProjectCard
-          projectImgSrc="card_one.jpeg"
-          projectTitle="Test Title"
-          projectCaption="Test Caption"
-        />
-        <ProjectCard
-          projectImgSrc="card_one.jpeg"
-          projectTitle="Test Title"
-          projectCaption="Test Caption"
-        />
-        <ProjectCard
-          projectImgSrc="card_one.jpeg"
-          projectTitle="Test Title"
-          projectCaption="Test Caption"
-        />
-        <ProjectCard
-          projectImgSrc="card_one.jpeg"
-          projectTitle="Test Title"
-          projectCaption="Test Caption"
-        />
-        <ProjectCard
-          projectImgSrc="card_one.jpeg"
-          projectTitle="Test Title"
-          projectCaption="Test Caption"
-        />
-        <ProjectCard
-          projectImgSrc="card_one.jpeg"
-          projectTitle="Test Title"
-          projectCaption="Test Caption"
-        />
       </CardContainer>
     </ArticleContainer>
   </Layout>
