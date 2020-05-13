@@ -2,6 +2,7 @@
 import React from "react";
 import tw from "tailwind.macro";
 import styled from "styled-components";
+import { ArticleA } from "../styles/PostStyles";
 
 const IntroContainer = styled.section`
   ${tw`px-8 md:py-2 mb-8 leading-relaxed`}
@@ -30,7 +31,10 @@ const Intro = () => (
       <BioText>
         I'm a Mechanical Engineer who's learning to code. This is where I share
         the things that I've created, where I write about the things that I'm
-        working on and where I talk about anything else that excites me.
+        working on and where I talk about anything else that excites me. Feel
+        free to get in touch with me on{" "}
+        <ArticleA href="https://twitter.com/duncanbain">Twitter</ArticleA> or at{" "}
+        <ArticleA href="mailto:duncan@bain.io">duncan@bain.io</ArticleA>.
       </BioText>
     </IntroText>
   </IntroContainer>

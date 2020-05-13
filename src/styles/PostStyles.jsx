@@ -2,7 +2,7 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 
 export const ArticleContainer = styled.section`
-  ${tw`px-8 break-words md:mt-12 mb-16`}
+  ${tw`px-8 break-words mb-16`}
 `;
 
 export const ArticleHeader = styled.h2`
@@ -65,6 +65,6 @@ export const ArticleEm = styled.em`
 `;
 
 export const ArticleA = styled.a`
-  ${tw`border-solid border-b-2 border-blue-400 hover:border-gray-800 font-semibold`}
+  ${tw`border-solid border-b-2 border-blue-400 hover:border-gray-800 font-bold`}
   transition: border 0.3s ease, color 0.3s ease;
 `;
