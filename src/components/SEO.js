@@ -8,6 +8,7 @@ import favicon64 from "../images/favicon.ico";
 import appleicon from "../images/apple-touch-icon.png";
 import android192 from "../images/android-chrome-192x192.png";
 import android512 from "../images/android-chrome-512x512.png";
+import socialcard from "../images/socialcard.jpg";
 
 function SEO({ description, lang, meta, image: metaImage, title }) {
   const site = useSiteMetadata();
@@ -17,7 +18,7 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
   const image =
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-      : null;
+      : `${site.siteMetadata.siteUrl}${socialcard}`;
 
   return (
     <Helmet
