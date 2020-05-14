@@ -2,6 +2,7 @@ import { graphql, Link } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
 import React from "react";
+import Img from "gatsby-image";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import {
@@ -27,6 +28,7 @@ import {
 export default ({ data, pageContext }) => {
   const { frontmatter, body } = data.mdx;
   const { previous, next } = pageContext;
+  const featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid;
 
   return (
     <Layout>
@@ -35,6 +37,7 @@ export default ({ data, pageContext }) => {
         <ArticleHeader>{frontmatter.title}</ArticleHeader>
         <ArticleDate>{frontmatter.date}</ArticleDate>
         <ArticleDescription>{frontmatter.description}</ArticleDescription>
+        <Img fluid={featuredImgFluid} />
         <div className="markdown">
           <MDXProvider
             components={{
@@ -88,6 +91,13 @@ export const query = graphql`
         title
         description
         date(formatString: "YYYY MMMM Do")
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 960) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
       }
     }
   }
