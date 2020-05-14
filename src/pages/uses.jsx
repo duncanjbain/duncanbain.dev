@@ -17,7 +17,7 @@ export default () => (
       <ArticleHeader>Uses</ArticleHeader>
       <ArticlePara>
         Inspirsed by Wes Bos and his{" "}
-        <ArticleA href="https://uses.tech">users.tech</ArticleA> website, I
+        <ArticleA href="https://uses.tech">uses.tech</ArticleA> website, I
         thought I&apos;d jump on the bandwagon and share my development stack!
       </ArticlePara>
       <ArticleH2>Software</ArticleH2>

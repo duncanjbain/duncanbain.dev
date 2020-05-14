@@ -11,15 +11,16 @@ export default () => (
     <ArticleContainer>
       <ArticleHeader>About</ArticleHeader>
       <ArticlePara>
-        Hi! I&apos;m Duncan, and I&apos;m Mechanical Engineer learning to code
-        based in London.
+        Hi! I&apos;m Duncan, and I&apos;m a Mechanical Engineer learning to
+        code, based in London.
       </ArticlePara>
       <ArticlePara>
         In Spring 2019 I decided to make a change, a change in my career as a
         Mechanical Engineer to become a Software Engineer. I&apos;ve always been
         interested in computers, having been introduced to them at a young age,
         I even went on to study Computer Science for a year before changing to
-        Mechanical Engineering!
+        Mechanical Engineering! Now after spending the last 8 years working in
+        various engineering roles I&apos;ve decided to make the change.
       </ArticlePara>
       <ArticlePara>
         I&apos;m now spending the majority of my free time learning HTML, CSS
