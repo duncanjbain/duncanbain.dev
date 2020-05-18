@@ -1,6 +1,5 @@
 import { graphql, Link } from "gatsby";
 import React from "react";
-import Img from "gatsby-image";
 import PropTypes from "prop-types";
 import "./index.css";
 import tw from "tailwind.macro";
@@ -41,7 +40,6 @@ const IndexTemplate = ({ data }) => (
               <ArticleTitle>{frontmatter.title}</ArticleTitle>
             </Link>
             <ArticleDate>{frontmatter.date}</ArticleDate>
-            <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />
             <ArticleExcerpt>{excerpt}</ArticleExcerpt>
           </Article>
         ))}
