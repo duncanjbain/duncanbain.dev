@@ -65,6 +65,6 @@ export const ArticleEm = styled.em`
 `;
 
 export const ArticleA = styled.a`
-  ${tw`border-solid border-b-2 border-blue-400 hover:border-gray-800 font-bold`}
+  ${tw`border-solid border-b-2 border-blue-400 hover:border-gray-800 font-bold bg-blue-100`}
   transition: border 0.3s ease, color 0.3s ease;
 `;

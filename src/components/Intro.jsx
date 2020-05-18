@@ -13,7 +13,7 @@ const IntroText = styled.p`
 `;
 
 const Name = styled.span`
-  ${tw`bg-gray-200 px-2`}
+  ${tw`bg-blue-100 px-2`}
 `;
 
 const BioText = styled.p`
