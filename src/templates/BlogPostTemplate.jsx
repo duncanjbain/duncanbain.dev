@@ -7,7 +7,6 @@ import SEO from "../components/SEO";
 import {
   ArticleContainer,
   ArticleHeader,
-  ArticleDescription,
   ArticleDate,
   ArticleH2,
   ArticleH3,
