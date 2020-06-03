@@ -11,7 +11,7 @@ const CardContainer = styled.div`
 `;
 
 export default () => (
-  <Layout title="About">
+  <Layout>
     <SEO title="Projects" />
     <ArticleContainer>
       <CardContainer>
