@@ -17,7 +17,7 @@ const Article = styled.article`
 `;
 
 const ArticleTitle = styled.h2`
-  ${tw`leading-tight mb-2 mt-0 font-black text-gray-800 text-2xl lg:text-3xl hover:underline`}
+  ${tw`leading-tight mb-2 mt-0 font-black text-gray-800 text-xl lg:text-3xl hover:underline`}
 `;
 
 const ArticleDate = styled.p`
@@ -34,6 +34,17 @@ const IndexTemplate = ({ data }) => (
       <SEO title="Home" />
       <Intro />
       <ArticleList>
+        <div>
+          <h2 className="text-xl md:text-3xl font-bold text-blue-600 border-b-2 border-blue-400 mb-4">
+            Latest Posts
+            <Link
+              className="text-lg md:text-2xl text-gray-700 float-right font-normal"
+              to="posts"
+            >
+              Read All Posts
+            </Link>
+          </h2>
+        </div>
         {data.allMdx.nodes.map(({ id, frontmatter, fields, excerpt }) => (
           <Article key={id}>
             <Link to={fields.slug}>
