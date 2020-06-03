@@ -34,7 +34,6 @@ export default ({ data, pageContext }) => {
       <ArticleContainer>
         <ArticleHeader>{frontmatter.title}</ArticleHeader>
         <ArticleDate>{frontmatter.date}</ArticleDate>
-        <ArticleDescription>{frontmatter.description}</ArticleDescription>
         <div className="markdown">
           <MDXProvider
             components={{
@@ -86,7 +85,6 @@ export const query = graphql`
       body
       frontmatter {
         title
-        description
         date(formatString: "YYYY MMMM Do")
       }
     }
