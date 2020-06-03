@@ -3,6 +3,7 @@ import styled from "styled-components";
 import tw from "tailwind.macro";
 import Layout from "../components/Layout";
 import ProjectCard from "../components/ProjectCard";
+import SEO from "../components/SEO";
 import { ArticleContainer } from "../styles/PostStyles";
 
 const CardContainer = styled.div`
@@ -11,6 +12,7 @@ const CardContainer = styled.div`
 
 export default () => (
   <Layout title="About">
+    <SEO title="Projects" />
     <ArticleContainer>
       <CardContainer>
         <ProjectCard
