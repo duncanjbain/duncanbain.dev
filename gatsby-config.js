@@ -3,9 +3,10 @@ const path = require("path");
 module.exports = {
   siteMetadata: {
     title: "duncanbain.dev",
-    description: "duncanbain.dev - Personal blog and portfolio",
+    description: "duncanbain.dev - A Personal Blog and Portfolio",
     author: "Duncan Bain",
-    keywords: "developer,personal blog, blog, portfolio",
+    keywords:
+      "web developer, personal blog, blog, portfolio, web development, gatsby, react, javascript",
     siteUrl: "https://duncanbain.dev", // no trailing slash!
     siteImage: "/images/socialcard.jpg", // path to site image
     twitterUrl: "https://twitter.com/duncanbain",

@@ -12,7 +12,7 @@ const CardContainer = styled.div`
 
 export default () => (
   <Layout>
-    <SEO title="Projects" />
+    <SEO title="Projects" description="My projects" />
     <ArticleContainer>
       <CardContainer>
         <ProjectCard
