@@ -100,5 +100,6 @@ module.exports = {
     "gatsby-plugin-netlify",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-styled-components",
+    "gatsby-plugin-social-cards",
   ],
 };

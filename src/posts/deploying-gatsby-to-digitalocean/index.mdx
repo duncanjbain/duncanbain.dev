@@ -36,7 +36,7 @@ This tutorial assumes that you have the following:
 
 Before starting, you should ensure that you have the latest versions of your installed system packages. Run the following:
 
-```shell
+```bash
 sudo apt update
 sudo apt upgrade
 ```
@@ -45,21 +45,21 @@ To have a more up to date version of NodeJS than what is generally available in 
 
 In this tutorial you will be installing the Long Term Support (LTS) version which is currently v12.x.x. Do the following to add the NodeJS PPA:
 
-```shell
+```bash
 cd ~
 curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
-sudo bash nodesource_setup.sh
+sudo language-bash nodesource_setup.sh
 ```
 
 This will then add the PPA to your package manager and make the latest NodeJS LTS version available for installation. You can now install NodeJS:
 
-```shell
+```bash
 sudo apt install nodejs
 ```
 
 Now verify that you have installed the NodeJS package and that it is the correct version:
 
-```shell
+```bash
 node -v
 
 v12.17.0
@@ -67,13 +67,13 @@ v12.17.0
 
 To upgrade npm (NodeJS's package manager) to the latest version run the following:
 
-```shell
+```bash
 sudo npm install -g npm@latest
 ```
 
 Sometimes some npm packages need compiling from source, so you will need to install the build-essential package:
 
-```shell
+```bash
 sudo apt install build-essential
 ```
 
@@ -81,13 +81,13 @@ sudo apt install build-essential
 
 The next step is to now install the Gatsby CLI package:
 
-```shell
+```bash
 sudo npm install -g gatsby-cli
 ```
 
 And now you can check that the Gatsby CLI package was installed correctly:
 
-```shell
+```bash
 gatsby -v
 
 ╔════════════════════════════════════════════════════════════════════════╗
@@ -106,7 +106,7 @@ Gatsby CLI version: 2.12.40
 
 To build your Gatsby site and make it ready for deploying you need to clone your Gatsby site repository to your Droplet. Run the following, where `<your-git-url>` is your Gatsby site's Git repository:
 
-```shell
+```bash
 git clone <your-git-url>
 ```
 
@@ -114,14 +114,14 @@ git clone <your-git-url>
 
 You can now enter your Gatsby site directory and install the sites' dependencies. Do the following:
 
-```shell
+```bash
 cd <your-gatsby-site>
 npm install
 ```
 
 You can now then build your Gatsby site:
 
-```shell
+```bash
 gatsby build
 ```
 
@@ -133,13 +133,13 @@ In order to serve your Gatsby website you need a webserver. One of the most wide
 
 Install Nginx:
 
-```shell
+```bash
 sudo apt install nginx
 ```
 
 If you have set up [UFW](https://help.ubuntu.com/community/UFW) then you will need to allow access to both HTTP and HTTPS from the outside world. Do the following:
 
-```shell
+```bash
 sudo ufw allow 'Nginx HTTP'
 sudo ufw allow 'Nginx HTTPS'
 ```
@@ -152,13 +152,13 @@ Although you're only setting up one site at the moment configuring things this w
 
 In order to create a server for your custom domain, copy the default provided by Nginx:
 
-```shell
+```bash
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/<your-custom-domain>
 ```
 
 Now you can edit the server block:
 
-```shell
+```bash
 sudo nano /etc/nginx/sites-available/<your-custom-domain>
 ```
 
@@ -166,7 +166,7 @@ First you need to look at the listen directives. You can have **only one server 
 
 For this example you can leave it as the default site, so you should remove this option from your newly created server block:
 
-```shell:title=/etc/nginx/sites-available/<your-custom-domain>
+```bash:title=/etc/nginx/sites-available/<your-custom-domain>
 [...]
         listen 80 default_server; // highlight-line
         listen [::]:80 default_server; // highlight-line
@@ -175,7 +175,7 @@ For this example you can leave it as the default site, so you should remove this
 
 Your listen directives should now look like this:
 
-```shell:title=/etc/nginx/sites-available/<your-custom-domain>
+```bash:title=/etc/nginx/sites-available/<your-custom-domain>
 [...]
         listen 80; // highlight-line
         listen [::]:80; // highlight-line
@@ -184,7 +184,7 @@ Your listen directives should now look like this:
 
 And then update the site `root` with the directory where your Gatsby site is, and `server_name` to your domain name:
 
-```shell:title=/etc/nginx/sites-available/<your-custom-domain>
+```bash:title=/etc/nginx/sites-available/<your-custom-domain>
 [...]
         #e.g root /home/gatsby_user/gatsby_site/public
         root <your-gatsby-site>/public; // highlight-line
@@ -199,13 +199,13 @@ And then update the site `root` with the directory where your Gatsby site is, an
 
 Now enable the site by creating a symlink in the `sites-enabled` directory:
 
-```shell
+```bash
 sudo ln -s /etc/nginx/sites-available/<your-custom-domain> /etc/nginx/sites-enabled/<your-custom-domain>
 ```
 
 Now you can reload the Nginx configuration files:
 
-```shell
+```bash
 sudo systemctl reload nginx
 ```
 
@@ -219,14 +219,14 @@ With services like [LetsEncrypt](https://letsencrypt.org/), HTTPS can now be qui
 
 LetsEncrypt recommend using [Certbot](https://certbot.eff.org/) to manage your HTTPS certificates. You should now install Certbot:
 
-```shell
+```bash
 sudo apt update
 sudo apt install certbot python3-certbot-nginx
 ```
 
 Once installed, run Certbot:
 
-```shell
+```bash
 sudo certbot --nginx
 ```
 
@@ -242,7 +242,7 @@ Your site will now be available to access on `https://<your-custom-domain>`.
 
 You can manually keep your site afterup to date, after changes are made to the site's Git repo, by SSH'ing into your DigitalOcean Droplet, entering the directory of your Gatsby site and then running:
 
-```shell
+```bash
 git pull
 gatsby build
 ```

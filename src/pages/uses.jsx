@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 import {
   ArticleContainer,
   ArticleHeader,
@@ -12,7 +13,8 @@ import {
 } from "../styles/PostStyles";
 
 export default () => (
-  <Layout title="About">
+  <Layout>
+    <SEO title="Uses" />
     <ArticleContainer>
       <ArticleHeader>Uses</ArticleHeader>
       <ArticlePara>
