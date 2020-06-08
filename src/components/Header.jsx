@@ -42,13 +42,13 @@ const Header = ({ siteAuthor, twitterLink, githubLink, linkedinLink }) => (
     <NavContainer>
       <NavList>
         <NavListItem>
-          <SiteNavLink to="/about">About</SiteNavLink>
+          <SiteNavLink to="/about/">About</SiteNavLink>
         </NavListItem>
         <NavListItem>
-          <SiteNavLink to="/projects">Projects</SiteNavLink>
+          <SiteNavLink to="/projects/">Projects</SiteNavLink>
         </NavListItem>
         <NavListItem>
-          <SiteNavLink to="/uses">Uses</SiteNavLink>
+          <SiteNavLink to="/uses/">Uses</SiteNavLink>
         </NavListItem>
         <NavListItem>
           <NavListIconLink href={twitterLink} aria-label="Twitter Profile">
