@@ -30,13 +30,16 @@ export default ({ data, pageContext }) => {
   const featuredImgFluid = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.fluid
     : null;
+  const socialImage = frontmatter.socialImage
+    ? frontmatter.featuredImage.childImageSharp.resize
+    : null;
 
   return (
     <Layout>
       <SEO
         title={frontmatter.title}
         description={frontmatter.description || excerpt}
-        image={featuredImgFluid}
+        socialImage={socialImage}
       />
       <ArticleContainer>
         <ArticleHeader>{frontmatter.title}</ArticleHeader>
