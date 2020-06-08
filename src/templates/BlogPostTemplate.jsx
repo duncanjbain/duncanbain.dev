@@ -2,6 +2,7 @@ import { graphql, Link } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
 import React from "react";
+import Img from "gatsby-image";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import {
@@ -24,15 +25,23 @@ import {
 } from "../styles/PostStyles";
 
 export default ({ data, pageContext }) => {
-  const { frontmatter, body } = data.mdx;
+  const { frontmatter, body, excerpt } = data.mdx;
   const { previous, next } = pageContext;
+  const featuredImgFluid = frontmatter.featuredImage
+    ? frontmatter.featuredImage.childImageSharp.fluid
+    : null;
 
   return (
     <Layout>
-      <SEO title={frontmatter.title} description={frontmatter.description} />
+      <SEO
+        title={frontmatter.title}
+        description={frontmatter.description || excerpt}
+        image={featuredImgFluid}
+      />
       <ArticleContainer>
         <ArticleHeader>{frontmatter.title}</ArticleHeader>
         <ArticleDate>{frontmatter.date}</ArticleDate>
+        <Img fluid={featuredImgFluid} />
         <div className="markdown">
           <MDXProvider
             components={{
@@ -82,10 +91,18 @@ export const query = graphql`
   query PostsBySlug($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
       body
+      excerpt(pruneLength: 160)
       frontmatter {
         title
         description
         date(formatString: "MMMM Do, YYYY")
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 960) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
       }
     }
   }
