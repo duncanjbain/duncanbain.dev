@@ -43,6 +43,7 @@ module.exports = {
         develop: false,
         tailwind: true,
         whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
+        ignore: ["prismjs/"],
         content: [
           path.join(process.cwd(), "src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}"),
         ],
