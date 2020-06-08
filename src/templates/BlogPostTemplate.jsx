@@ -106,6 +106,15 @@ export const query = graphql`
             }
           }
         }
+        socialImage {
+          childImageSharp {
+            resize(width: 1200) {
+              src
+              height
+              width
+            }
+          }
+        }
       }
     }
   }
