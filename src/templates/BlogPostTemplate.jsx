@@ -108,7 +108,7 @@ export const query = graphql`
         }
         socialImage {
           childImageSharp {
-            resize(height: 628) {
+            resize(width: 1200, height: 628) {
               src
               height
               width
