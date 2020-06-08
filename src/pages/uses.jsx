@@ -14,7 +14,10 @@ import {
 
 export default () => (
   <Layout>
-    <SEO title="Uses" />
+    <SEO
+      title="Uses"
+      description="My development stack. The hardware, software and tools I use on a daily basis."
+    />
     <ArticleContainer>
       <ArticleHeader>Uses</ArticleHeader>
       <ArticlePara>

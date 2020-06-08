@@ -9,7 +9,10 @@ import {
 
 export default () => (
   <Layout>
-    <SEO title="About" />
+    <SEO
+      title="About"
+      description="Hi! I'm Duncan, and I'm a Mechanical Engineer learning to code, based in London."
+    />
     <ArticleContainer>
       <ArticleHeader>About</ArticleHeader>
       <ArticlePara>
