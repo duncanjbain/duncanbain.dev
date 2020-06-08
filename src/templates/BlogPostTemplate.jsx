@@ -31,7 +31,7 @@ export default ({ data, pageContext }) => {
     ? frontmatter.featuredImage.childImageSharp.fluid
     : null;
   const socialImage = frontmatter.socialImage
-    ? frontmatter.featuredImage.childImageSharp.resize
+    ? frontmatter.socialImage.childImageSharp.resize
     : null;
 
   return (
@@ -39,7 +39,7 @@ export default ({ data, pageContext }) => {
       <SEO
         title={frontmatter.title}
         description={frontmatter.description || excerpt}
-        socialImage={socialImage}
+        image={socialImage}
       />
       <ArticleContainer>
         <ArticleHeader>{frontmatter.title}</ArticleHeader>
