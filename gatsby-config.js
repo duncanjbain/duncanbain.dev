@@ -103,6 +103,5 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-social-cards",
-    "gatsby-plugin-feed",
   ],
 };
