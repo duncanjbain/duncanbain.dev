@@ -6634,10 +6634,10 @@ gatsby-plugin-sitemap@^2.4.11:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-social-cards@^0.5.12:
-  version "0.5.12"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-social-cards/-/gatsby-plugin-social-cards-0.5.12.tgz#b73eba6742c2bfbb979b1337f72f91441a550771"
-  integrity sha512-PJcXeXnW0zMFWTgIXKhhEpEBodL0L8wPtWJkho+k46AWcEYnt0QofUWXXlBYZ2PX9JQ5hu1pcoodIfaQ6X7KSA==
+gatsby-plugin-social-cards@^0.5.15:
+  version "0.5.15"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-social-cards/-/gatsby-plugin-social-cards-0.5.15.tgz#046c47fb83cab7d6b08a13eb17f73efcced9915e"
+  integrity sha512-LxZICHoVzFvYswjbOJLu50i+tZpKP+Ney8qXGiNE0ehgJQUnlimTEiO6EyOXPIodB6LW0BY5y/MPDX8TgCQYiA==
 
 gatsby-plugin-styled-components@^3.3.10:
   version "3.3.10"
