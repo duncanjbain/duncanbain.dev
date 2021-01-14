@@ -18,7 +18,7 @@
     "gatsby-plugin-manifest": "^2.8.0",
     "gatsby-plugin-mdx": "^1.6.0",
     "gatsby-plugin-netlify": "^2.7.0",
-    "gatsby-plugin-page-creator": "^2.6.0",
+    "gatsby-plugin-page-creator": "^2.8.1",
     "gatsby-plugin-postcss": "^3.3.0",
     "gatsby-plugin-preload-fonts": "^1.5.0",
     "gatsby-plugin-purgecss": "^5.0.0",
