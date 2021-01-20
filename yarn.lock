@@ -6803,10 +6803,10 @@ gatsby-plugin-social-cards@^0.5.17:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-social-cards/-/gatsby-plugin-social-cards-0.5.17.tgz#442fc0240c50bf6eb43cd448caa1d5578db7cc29"
   integrity sha512-7eCS7m5fkcw3gKa4awGp0p7e4Ca7z9Sihlw630ZySmf+PaMq9bqh/GaGsR8KhLy7tifDbzO07WMx0Zef4Ersig==
 
-gatsby-plugin-styled-components@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.6.0.tgz#0ef4c72871a5e2944fa24b07c2b3da0b31aba19f"
-  integrity sha512-Pk7BtQfxuCoQKmzhVa762bhWtSIiY3EX86GemXyaLh81+HSkmQR371/GRAXB5CuiLi87Uf64+KcTYUJXyFOOAg==
+gatsby-plugin-styled-components@^3.9.0:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.9.0.tgz#510de14e77da898c24a6e74ced39f5d01b2c7e7a"
+  integrity sha512-/jvjbeUOHk3X38G67va6n2yUQujNn1e74r0a6977+6MJihELXLskLrGpZF58ZWbV36YryIq0rrSpa5DAxzDaVw==
   dependencies:
     "@babel/runtime" "^7.12.5"
 
