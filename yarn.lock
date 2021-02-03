@@ -6572,10 +6572,10 @@ gatsby-cli@^2.15.1:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^1.1.2"
 
-gatsby-core-utils@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.6.0.tgz#ec719e1a1d409ce69f89883e4334922f3b5c720e"
-  integrity sha512-jGaXDPbXOkP5Ct7pcOTsx0C0WTvIjSBVlHp0oBIv6rTw7DP498G9RAytqOT8z3uAf1PzWjAcUEMGNdicVucrxg==
+gatsby-core-utils@^1.10.0, gatsby-core-utils@^1.6.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.10.0.tgz#7df5bc7b7e810c71602d5ec18a925e8a7890fb45"
+  integrity sha512-uI5gJXmVHegn8E/vttoX0BaXRJPC73RzxuZDtl2U5WBEgeg+VVkKCmNVQE9Xk+Qstm2Wd6RU+QJ4LMx5ywYZhQ==
   dependencies:
     ci-info "2.0.0"
     configstore "^5.0.1"
@@ -6721,15 +6721,15 @@ gatsby-plugin-postcss@^3.3.0:
     "@babel/runtime" "^7.12.5"
     postcss-loader "^4.0.4"
 
-gatsby-plugin-preload-fonts@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preload-fonts/-/gatsby-plugin-preload-fonts-1.5.0.tgz#1a667db3452770a079caa128d6302cd0600c796e"
-  integrity sha512-rXzxCHFJ1lFE4hn0ckhLHUVJOhBEsrxjNiLPKR3vI4LhsviibVq/quIsJ1nlxgkW8xuNJOPX0pc/DRTLsYjloQ==
+gatsby-plugin-preload-fonts@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preload-fonts/-/gatsby-plugin-preload-fonts-1.9.0.tgz#a41a7b389209525c0a13366dc7a0d4564e441d24"
+  integrity sha512-KAIFCcBBWQY6j/EPFcgTG6tMTu8KKXunqHw1Mm3AwhsLV/hKxGSpPuPd6ibGdGZe3vOP5pMN+Y5ujMFoArYiHQ==
   dependencies:
     chalk "^4.1.0"
     date-fns "^2.16.1"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.6.0"
+    gatsby-core-utils "^1.10.0"
     graphql-request "^1.8.2"
     progress "^2.0.3"
     puppeteer "^3.3.0"
