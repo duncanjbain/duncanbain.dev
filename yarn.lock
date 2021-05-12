@@ -4416,10 +4416,10 @@ dataloader@^1.4.0:
   resolved "https://registry.yarnpkg.com/dataloader/-/dataloader-1.4.0.tgz#bca11d867f5d3f1b9ed9f737bd15970c65dff5c8"
   integrity sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==
 
-date-fns@^2.14.0, date-fns@^2.16.1:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.19.0.tgz#65193348635a28d5d916c43ec7ce6fbd145059e1"
-  integrity sha512-X3bf2iTPgCAQp9wvjOQytnf5vO5rESYRXlPIVcgSbtT5OTScPcsf9eZU+B/YIkKAtYr5WeCii58BgATrNitlWg==
+date-fns@^2.14.0, date-fns@^2.21.1:
+  version "2.21.3"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.21.3.tgz#8f5f6889d7a96bbcc1f0ea50239b397a83357f9b"
+  integrity sha512-HeYdzCaFflc1i4tGbj7JKMjM4cKGYoyxwcIIkHzNgCkX8xXDNJDZXgDDVchIWpN4eQc3lH37WarduXFZJOtxfw==
 
 debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
@@ -6211,10 +6211,10 @@ gatsby-cli@^3.0.0:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.0.0.tgz#00fdc1f2efcaabe7426e63b020a7117ca613780c"
-  integrity sha512-+DrClKZ/ScTbzhIHZXuU3DoIhEJ95uJV+swR7VVqYVhEpV1CnjUGR/dB+tMd0VqlPdrXB38FuR8O5kuSvYm+/A==
+gatsby-core-utils@^2.0.0, gatsby-core-utils@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.5.0.tgz#70b3aabf184a39c790e12af8001be4164fd8afa6"
+  integrity sha512-YbKv7FLpeTCts28bv0H2lSuHrKgUxnsC1ZG1PPydOheQgPW9G8pdNlYvwZzGJmmS7rBcC/w859ss90wlvF6GEw==
   dependencies:
     ci-info "2.0.0"
     configstore "^5.0.1"
@@ -6362,15 +6362,15 @@ gatsby-plugin-postcss@^4.0.0:
     "@babel/runtime" "^7.12.5"
     postcss-loader "^4.1.0"
 
-gatsby-plugin-preload-fonts@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preload-fonts/-/gatsby-plugin-preload-fonts-2.0.0.tgz#1330a52c1374bbbb3e83c3921d67dbb7ac5a4d50"
-  integrity sha512-if2kOjzZ0jXQF2V3swViSNBjLwYiXqEGl9TSHdN8VsjAV3hlCbA6N28j1WuC9spWYpd1zJepL8M/YjqkGbRrAQ==
+gatsby-plugin-preload-fonts@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preload-fonts/-/gatsby-plugin-preload-fonts-2.5.0.tgz#0faf328bceed9b805337e4e03fc2ed28bccce6b1"
+  integrity sha512-WFlo0R0TAzpBogTpRz97Eg4fQi+eIQ7wpgXPYq/EJpks1ZPHaY0E8FBwtUNvmeW0crvHA12KLqPpAjzuywPrtw==
   dependencies:
     chalk "^4.1.0"
-    date-fns "^2.16.1"
+    date-fns "^2.21.1"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^2.0.0"
+    gatsby-core-utils "^2.5.0"
     graphql-request "^1.8.2"
     progress "^2.0.3"
     puppeteer "^3.3.0"
