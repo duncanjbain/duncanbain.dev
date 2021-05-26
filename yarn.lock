@@ -6354,10 +6354,10 @@ gatsby-plugin-page-creator@^3.0.0:
     globby "^11.0.2"
     lodash "^4.17.20"
 
-gatsby-plugin-postcss@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss/-/gatsby-plugin-postcss-4.0.0.tgz#1d8f41c06aac788bb380e0ae555df4aeee7d7ab8"
-  integrity sha512-jcyOccxIjnFp9955eJ382LS2ZeYCt0cDr7hQHlzErtKCfTCN/vGWau+CxRG1AN5S1TtyR/ikvDhuirl5lx2kAw==
+gatsby-plugin-postcss@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss/-/gatsby-plugin-postcss-4.6.0.tgz#fc45a3fecce818ee8e82143232724b8be20a58c8"
+  integrity sha512-yYRF2mPVwNVHDcL6yR97j0tf3MKgaPfWmfyC1s5Fp9VvIwOZ8w/sU88Dqnr+diGXarRry3MxwugNVuVLbp+Uaw==
   dependencies:
     "@babel/runtime" "^7.12.5"
     postcss-loader "^4.1.0"
