@@ -991,10 +991,10 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.1", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
-  version "7.13.10"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
-  integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
+"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.6", "@babel/runtime@^7.3.1", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+  version "7.14.8"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.8.tgz#7119a56f421018852694290b9f9148097391b446"
+  integrity sha512-twj3L8Og5SaCRCErB4x4ajbvBIVV77CGeFglHpeg5WC5FF8TZzBWXtTJ4MqaD9QszLYTtr+IsaAL2rEUevb+eg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -6446,12 +6446,12 @@ gatsby-plugin-social-cards@^0.5.17:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-social-cards/-/gatsby-plugin-social-cards-0.5.17.tgz#442fc0240c50bf6eb43cd448caa1d5578db7cc29"
   integrity sha512-7eCS7m5fkcw3gKa4awGp0p7e4Ca7z9Sihlw630ZySmf+PaMq9bqh/GaGsR8KhLy7tifDbzO07WMx0Zef4Ersig==
 
-gatsby-plugin-styled-components@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-4.0.0.tgz#eea171e85b5b3b7c0554c62178c09714fea29981"
-  integrity sha512-wV33OxkQTqS7Tw8Nez7XT+Sf9FnvNVqOYzGPZKFlApUjBJvBen2D/kDJCEUlwHA3164s6mqp/Qq/80lup3V6Yg==
+gatsby-plugin-styled-components@^4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-4.10.0.tgz#9e60793b01ac7150291ffaa532d3d1287d9f3b9d"
+  integrity sha512-QLFHJEIE52d038bLiVNg1fo3/WQJKMf64p3LzL5eiPcxzxu57hC2S2mbFz0Gd67EKgJD/KAPTprXge/7S7zfUw==
   dependencies:
-    "@babel/runtime" "^7.12.5"
+    "@babel/runtime" "^7.14.6"
 
 gatsby-plugin-typescript@^3.0.0:
   version "3.0.0"
