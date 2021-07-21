@@ -991,10 +991,10 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.1", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
-  version "7.13.10"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
-  integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
+"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.6", "@babel/runtime@^7.3.1", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+  version "7.14.8"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.8.tgz#7119a56f421018852694290b9f9148097391b446"
+  integrity sha512-twj3L8Og5SaCRCErB4x4ajbvBIVV77CGeFglHpeg5WC5FF8TZzBWXtTJ4MqaD9QszLYTtr+IsaAL2rEUevb+eg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -6392,12 +6392,12 @@ gatsby-plugin-react-helmet-canonical-urls@^1.4.0:
   dependencies:
     "@babel/runtime" "^7.3.1"
 
-gatsby-plugin-react-helmet@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.0.0.tgz#6d4fddc51a271859b21ec93645cdd0d3ad03b02c"
-  integrity sha512-l83wSwjF3Wq8ZHAFwhwx5EKQ67NUNCaZp9XDDplVQ+zFZ6dVAAax56wZLp6kQ++bYr+Hu9NOODLbLITtff+Eiw==
+gatsby-plugin-react-helmet@^4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.10.0.tgz#b33f25dd7b2062cdf6040bb4249ab5a3aa2dd4e4"
+  integrity sha512-cmYU2Y0krb6L5Bgb4RoR/LW9ZJw946eDrvVOYk71hoSEjsvIIYkAwAI+kVziApdCGH9Is79y1qMrLKMAG+YKSw==
   dependencies:
-    "@babel/runtime" "^7.12.5"
+    "@babel/runtime" "^7.14.6"
 
 gatsby-plugin-remove-serviceworker@^1.0.0:
   version "1.0.0"
