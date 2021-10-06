@@ -13,7 +13,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@tailwindcss/typography": "^0.4.1",
-    "date-fns": "^2.23.0",
+    "date-fns": "^2.25.0",
     "esbuild": "^0.12.15",
     "globby": "^12.0.0",
     "gray-matter": "^4.0.3",
